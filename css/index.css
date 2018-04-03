@@ -1,3 +1,5 @@
+
+
 body {
 	background: #ffffff;
 }
@@ -7,32 +9,33 @@ h1 {
 	text-align: center;
 	font-size: 600%;
 	font-weight: bolder;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: Lato;
 }
 
 h3 {
 	text-align: center;
 	font-size: 200%;
 	font-weight: bolder;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: Lato;
 	font-variant: small-caps;
 }
-
 
 .list-inline {
 	list-style-type: none;
   	margin: 0;
-  	padding: 0;
+  	padding-top: 50px;
+    margin-bottom: 40px;
   	text-align: center;
+    padding-bottom: 50px;
 }
 
 .list-inline-item {
-	padding-top: 100px;
+	padding-top: 30px;
 	padding-left: 40px;
 	display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-  	position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .list-inline-itme: hover {
@@ -44,7 +47,7 @@ h3 {
 	height: 350px;
 	width: 350px;
 	padding: 3px;
-	border:3px solid #021a40;
+	border:3px solid #333;
 }
 
 span.text-content {
@@ -54,7 +57,7 @@ span.text-content {
   display: table;
   height: 350px;
   left: 15px;
-  top: -161px;
+  top: -164px;
   position: absolute;
   width: 350px;
   opacity: 0;
@@ -77,12 +80,17 @@ span.text-content span {
 	opacity: 1;
 }
 
-
-
-#social-gp {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
+.social-gp {
 	text-align: center;
+}
+
+.list-item{
+  float: right;
+  text-decoration: none;
+  padding-right: 10px;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
 }
 
 .icon {
@@ -91,25 +99,56 @@ span.text-content span {
 }
 
 .icon.a {
-	text-align: center;
 	text-decoration: none;
 }
 
 a:link {
     text-decoration: none;
-    color: #000000;
+    color: #333;
     font-weight: bolder;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-  }
-  a:visited {
+}
+a:visited {
     text-decoration: none;
-    color: #000000;
-  }
-  a:hover {
+    color: #333;
+}
+a:hover {
     text-decoration: none;
-    color: #881c1c;
-  }
-  a: active {
+    color: #333;
+}
+a: active {
     text-decoration: none;
-    color: #000000;
-  }
+    color: #333;
+}
+
+footer{
+  border-top: 1px #DDDDDD solid;
+}
+
+.social-gp a{
+  float: right;
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+.copyright {
+  float: left;
+  color: #000;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
