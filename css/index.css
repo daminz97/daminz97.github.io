@@ -20,6 +20,15 @@ h3 {
 	font-variant: small-caps;
 }
 
+.table{
+  vertical-align: center;
+  text-align: center;
+  padding-top: 50px;
+  display: block;
+  position: relative;
+  height: 630px;
+}
+
 .list-inline {
 	list-style-type: none;
   	margin: 0;
@@ -48,6 +57,7 @@ h3 {
 	width: 350px;
 	padding: 3px;
 	border:3px solid #333;
+  border-radius: 15px;
 }
 
 span.text-content {
@@ -121,30 +131,35 @@ a: active {
     color: #333;
 }
 
-footer{
-  border-top: 1px #DDDDDD solid;
+.social-gp{
+  position: relative;
+  display: block;
   bottom: 0;
-  height: 20px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #bdbdbd;
+  text-align: center;
+  vertical-align: center;
 }
 
 .social-gp a{
-  float: right;
   color: #000;
   display: inline-block;
   vertical-align: center;
   padding-top: 10px;
-  padding-right: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
 }
 
 .copyright {
-  float: left;
+  position: relative;
   color: #000;
-  display: inline-block;
+  display: block;
+  padding-bottom: 0;
+  bottom: 0;
   padding-top: 10px;
-  padding-left: 15px;
   font-family: Lato;
   font-size: 1em;
   font-weight: bold;
