@@ -24,9 +24,10 @@ h3 {
   vertical-align: center;
   text-align: center;
   padding-top: 50px;
-  display: block;
+  padding-bottom: 50px;
   position: relative;
-  height: 630px;
+  height: 100%;
+  width: 100%;
 }
 
 .list-inline {
@@ -57,7 +58,6 @@ h3 {
 	width: 350px;
 	padding: 3px;
 	border:3px solid #333;
-  border-radius: 15px;
 }
 
 span.text-content {
@@ -90,9 +90,6 @@ span.text-content span {
 	opacity: 1;
 }
 
-.social-gp {
-	text-align: center;
-}
 
 .list-item{
   float: right;
@@ -131,9 +128,14 @@ a: active {
     color: #333;
 }
 
+.footer{
+  background: #EEEEEE;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .social-gp{
-  position: relative;
-  display: block;
   bottom: 0;
   padding-bottom: 0;
   border-bottom: 1px solid #bdbdbd;
@@ -144,7 +146,6 @@ a: active {
 .social-gp a{
   color: #000;
   display: inline-block;
-  vertical-align: center;
   padding-top: 10px;
   padding-right: 5px;
   padding-left: 5px;
@@ -154,11 +155,7 @@ a: active {
 }
 
 .copyright {
-  position: relative;
   color: #000;
-  display: block;
-  padding-bottom: 0;
-  bottom: 0;
   padding-top: 10px;
   font-family: Lato;
   font-size: 1em;
