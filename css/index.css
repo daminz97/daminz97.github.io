@@ -123,19 +123,19 @@ a: active {
 
 footer{
   border-top: 1px #DDDDDD solid;
+  bottom: 0;
+  height: 20px;
 }
 
 .social-gp a{
   float: right;
   color: #000;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: center;
   padding-top: 10px;
   padding-right: 15px;
-  padding-bottom: 15px;
   font-size: 1.5em;
   font-weight: bold;
-  line-height: 20px;
   text-align: center;
 }
 
@@ -143,12 +143,11 @@ footer{
   float: left;
   color: #000;
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 15px;
-  padding-bottom: 15px;
   font-family: Lato;
-  font-size: 15px;
+  font-size: 1em;
   font-weight: bold;
-  line-height: 20px;
   text-align: center;
+  vertical-align: center;
 }
