@@ -31,6 +31,10 @@ body{
   background: #ffffff;
 }
 
+.content{
+  padding-left: 100px;
+}
+
 #portfolio {  
     margin: 1rem 0;
     -webkit-column-count: 3; 
