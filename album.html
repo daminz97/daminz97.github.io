@@ -219,7 +219,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="pics/tabIcon/tab-icon.jpg">
+  <link rel="icon" href="pics/tabIcon/tab-icon.png">
   <title>Damin Zhang</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
   <link rel='stylesheet prefetch' href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css'>
@@ -227,42 +227,71 @@
 </head>
 
 <body>
+  <div class="homebtn">
+    <ul class="menu">
+      <li><a href="index.html"><img id="homebtn" src="pics/tabIcon/tab-icon.jpg"></a></li>
+      <li id="fbtn"><p><a class="btt" href="#">Back to top</a></p></li>
+      <li><p class="float-left">Copyright © 2018 Damin Zhang</p></li>
+    </ul>
+  </div>
+
+
+
   <div class="toolbar mb2 mt2">
-  <button class="btn fil-cat" href="" data-rel="all">All</button>
+  <button class="btn fil-cat" data-rel="Beijing">Beijing</button>
+  <button class="btn fil-cat" data-rel="Xian">Xi'an</button>
+  <button class="btn fil-cat" data-rel="Random">Random</button>
+  <button class="btn fil-cat" data-rel="Niagara">Niagara</button>
   <button class="btn fil-cat" data-rel="UChicago">UChicago</button>
   <button class="btn fil-cat" data-rel="Wachusett">Wachusett</button>
-  <button class="btn fil-cat" data-rel="Niagara">Niagara</button>
   <button class="btn fil-cat" data-rel="Firework">Firework</button>
   <button class="btn fil-cat" data-rel="Quabbin">Quabbin</button>
   </div> 
    
   <div id="portfolio">
-    <div class="tile scale-anm Wachusett all"><img src="pics/album/wa.JPG" alt="" /></div>
-    <div class="tile scale-anm Wachusett all"><img src="pics/album/wa2.JPG" alt="" /></div>
-    <div class="tile scale-anm Wachusett all"><img src="pics/album/wa3.JPG" alt="" /></div>
-    <div class="tile scale-anm Niagara all"><img src="pics/album/niagara.jpg" alt="" /></div>
-    <div class="tile scale-anm Niagara all"><img src="pics/album/niagara2.jpg" alt="" /></div>
-    <div class="tile scale-anm Niagara all"><img src="pics/album/niagara3.jpg" alt="" /></div>
-    <div class="tile scale-anm Firework all"><img src="pics/album/firework.jpg" alt="" /></div>
-    <div class="tile scale-anm Firework all"><img src="pics/album/firework2.jpg" alt="" /></div>
-    <div class="tile scale-anm Firework all"><img src="pics/album/firework3.jpg" alt="" /></div>
-    <div class="tile scale-anm Firework all"><img src="pics/album/firework4.jpg" alt="" /> </div>
-    <div class="tile scale-anm Quabbin all"><img src="pics/album/quabin.JPG" alt="" /></div>
-    <div class="tile scale-anm Quabbin all"><img src="pics/album/quabin2.JPG" alt="" /></div>
-    <div class="tile scale-anm Quabbin all"><img src="pics/album/quabin3.JPG" alt="" /> </div>
-    <div class="tile scale-anm UChicago all"><img src="pics/album/uchicago.jpg" alt="" />  </div>
-    <div class="tile scale-anm UChicago all"><img src="pics/album/uchicago2.jpg" alt="" /></div> 
-    <div class="tile scale-anm UChicago all"><img src="pics/album/uchicago3.jpg" alt="" />  </div>
+    <div class="tile scale-anm Beijing"><img src="pics/album/beijing/forbidden1.jpg" alt="" /></div>
+    <div class="tile scale-anm Beijing"><img src="pics/album/beijing/forbidden2.jpg" alt="" /></div>
+    <div class="tile scale-anm Beijing"><img src="pics/album/beijing/graffiti.jpg" alt="" /></div>
+    <div class="tile scale-anm Beijing"><img src="pics/album/beijing/greatwall1.jpg" alt="" /></div>
+    <div class="tile scale-anm Beijing"><img src="pics/album/beijing/greatwall2.jpg" alt="" /></div>
+
+    <div class="tile scale-anm Xian"><img src="pics/album/xi'an/belltower.jpg" alt="" /></div>
+    <div class="tile scale-anm Xian"><img src="pics/album/xi'an/citywall1.jpg" alt="" /></div>
+    <div class="tile scale-anm Xian"><img src="pics/album/xi'an/citywall2.jpg" alt="" /></div>
+    <div class="tile scale-anm Xian"><img src="pics/album/xi'an/drumtower.jpg" alt="" /></div>
+    <div class="tile scale-anm Xian"><img src="pics/album/xi'an/terracotta.jpg" alt="" /></div>
+    
+    <div class="tile scale-anm Random"><img src="pics/album/random/bridge.jpg" alt="" /></div>
+    <div class="tile scale-anm Random"><img src="pics/album/random/Karthus.jpg" alt="" /></div>
+    <div class="tile scale-anm Random"><img src="pics/album/random/pigeon.jpg" alt="" /></div>
+    <div class="tile scale-anm Random"><img src="pics/album/random/spring.jpg" alt="" /></div>
+    <div class="tile scale-anm Random"><img src="pics/album/random/staircase.jpg" alt="" /></div>
+    <div class="tile scale-anm Random"><img src="pics/album/random/pandabrew.jpg" alt="" /></div>
+
+    <div class="tile scale-anm Wachusett"><img src="pics/album/wa/wa1.JPG" alt="" /></div>
+    <div class="tile scale-anm Wachusett"><img src="pics/album/wa/wa2.JPG" alt="" /></div>
+    <div class="tile scale-anm Wachusett"><img src="pics/album/wa/wa3.JPG" alt="" /></div>
+
+    <div class="tile scale-anm Niagara"><img src="pics/album/niagara/niagara1.jpg" alt="" /></div>
+    <div class="tile scale-anm Niagara"><img src="pics/album/niagara/niagara2.jpg" alt="" /></div>
+    <div class="tile scale-anm Niagara "><img src="pics/album/niagara/niagara3.jpg" alt="" /></div>
+
+    <div class="tile scale-anm Firework"><img src="pics/album/firework/firework1.jpg" alt="" /></div>
+    <div class="tile scale-anm Firework"><img src="pics/album/firework/firework2.jpg" alt="" /></div>
+    <div class="tile scale-anm Firework"><img src="pics/album/firework/firework3.jpg" alt="" /></div>
+    <div class="tile scale-anm Firework"><img src="pics/album/firework/firework4.jpg" alt="" /> </div>
+
+    <div class="tile scale-anm Quabbin"><img src="pics/album/quabin/quabin1.JPG" alt="" /></div>
+    <div class="tile scale-anm Quabbin"><img src="pics/album/quabin/quabin2.JPG" alt="" /></div>
+    <div class="tile scale-anm Quabbin"><img src="pics/album/quabin/quabin3.JPG" alt="" /> </div>
+
+    <div class="tile scale-anm UChicago"><img src="pics/album/uchicago/uchicago1.jpg" alt="" />  </div>
+    <div class="tile scale-anm UChicago"><img src="pics/album/uchicago/uchicago2.jpg" alt="" /></div> 
+    <div class="tile scale-anm UChicago"><img src="pics/album/uchicago/uchicago3.jpg" alt="" />  </div>
   </div>
 
   <div style="clear:both;"></div>
 
-  <footer class="text-muted">
-    <div class="container">
-      <div class="fbtn"><p><a class="btt" href="#">Back to top</a></p></div>
-      <p class="float-left">Copyright © 2018 Damin Zhang</p>
-    </div>
-  </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script src="js/album.js"></script>
 

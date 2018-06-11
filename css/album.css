@@ -1,9 +1,36 @@
 
 body{
-  max-width: 900px;
+  max-width: 1200px;
   float: none;
   margin: auto; 
 }
+
+.homebtn{
+  position: fixed;
+  left: 0;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.menu {
+  width: 150px;
+  height: 450px;
+  list-style: none;
+}
+
+.menu li {
+  width: 150px;
+  height: 150px;
+}
+
+#homebtn {
+  float: left;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #ffffff;
+}
+
 #portfolio {  
     margin: 1rem 0;
     -webkit-column-count: 3; 
@@ -90,14 +117,15 @@ p{
   padding: 0;
 }
 
-.fbtn{
-  float: right;
+#fbtn{
+  float: none;
   display:block; 
   border: 2px #333 solid;
   margin-bottom: 10px;
+  height: 75px;
 }
 
-.fbtn p{
+#fbtn p{
   font-weight: bold;
   font-size: 15px;
 }
@@ -116,7 +144,8 @@ p{
   color: #333;}
 
 .float-left{
-  float: left;
+  float: none;
+  display: block;
   border-bottom: 1px #ccc dotted; 
 }
 
