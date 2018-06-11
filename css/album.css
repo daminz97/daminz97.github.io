@@ -1,4 +1,4 @@
-
+/*
 body{
   max-width: 1200px;
   float: none;
@@ -29,6 +29,39 @@ body{
   height: 150px;
   width: 150px;
   background: #ffffff;
+}
+
+#fbtn{
+  float: none;
+  display:block; 
+  background: #000;
+  border: 2px #000 solid;
+  height: 70px;
+}
+
+#fbtn p{
+  font-weight: bold;
+  font-size: 15px;
+  padding: .5rem 1rem;
+}
+
+.btt:link{
+  text-decoration: none;
+  color: #fff}
+.btt:visited{
+  text-decoration: none;
+  color: #fff}
+.btt:hover{
+  text-decoration: none;
+  color: #fff}
+.btt:active{
+  text-decoration: none;
+  color: #fff;}
+
+.float-left{
+  float: none;
+  display: block;
+  border-bottom: 1px #ccc dotted; 
 }
 
 .content{
@@ -65,7 +98,6 @@ body{
 
 p{ 
   padding:10px; 
-/*  border-bottom: 1px #ccc dotted; */
   text-decoration: none; 
   font-family: lato; 
   text-transform:uppercase; 
@@ -75,17 +107,11 @@ p{
   float:left;
 }
 
-/*p:hover { 
-  cursor:pointer; 
-  background: #333; 
-  color:#eee; }*/
-
 .tile img {
     max-width: 100%;
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
-  
 }
 
 .btn {
@@ -120,36 +146,154 @@ p{
   border: 0;
   padding: 0;
 }
+*/
 
+
+body {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  display: block;
+  padding-left: 250px;
+  margin-top: 20px;
+}
+.navbar {
+  list-style: none;
+}
+.navbar li {
+  float: left;
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+  line-height: normal;
+  padding: .5rem 1rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  height: auto;
+  border: 1px solid;
+  border-radius: 30px;
+  vertical-align: center;
+  -webkit-appearance: none;
+  color: #555;
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar li a {
+  text-decoration: none;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 15px;
+  padding: .5rem 1rem;
+  text-align: center;
+  vertical-align: center;
+}
+.navbtn:link{
+  text-decoration: none;
+  color: #000}
+.navbtn:visited{
+  text-decoration: none;
+  color: #000}
+.navbtn:hover{
+  text-decoration: none;
+  color: #000}
+.navbtn:active{
+  text-decoration: none;
+  color: #000;}
+.homebtn {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: inline-block;
+  padding-right: 50px;
+  background: #EEEEEE;
+}
+.menu {
+  width: 150px;
+  height: 450px;
+  list-style: none;
+}
+.menu li {
+  width: 150px;
+  height: 150px;
+}
+#homebtn {
+  height: 150px;
+  width: 150px;
+}
 #fbtn{
   float: none;
   display:block; 
-  border: 2px #333 solid;
+  background: #000;
+  border: 2px #000 solid;
+  border-radius: 30px;
+  height: 70px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  height: 75px;
 }
-
 #fbtn p{
   font-weight: bold;
   font-size: 15px;
+  padding-left: 1.5rem;
+  text-align: center;
+  vertical-align: center;
 }
-
 .btt:link{
   text-decoration: none;
-  color: #333}
+  color: #fff}
 .btt:visited{
   text-decoration: none;
-  color: #333}
+  color: #fff}
 .btt:hover{
   text-decoration: none;
-  color: #333}
+  color: #fff}
 .btt:active{
   text-decoration: none;
-  color: #333;}
-
-.float-left{
-  float: none;
-  display: block;
-  border-bottom: 1px #ccc dotted; 
+  color: #fff;}
+p{ 
+  padding:10px; 
+  text-decoration: none; 
+  font-family: lato; 
+  text-transform:uppercase; 
+  font-size: 12px; 
+  color: #333;  
+  float:left;
 }
-
+.photos{
+  padding-left: 250px;
+}
+.photos h1 {
+  float: left;
+  font-family: Lato;
+  font-weight: bolder;
+  width: 90%;
+  background: #EEEEEE;
+  border: 1px solid;
+  border-color: #EEEEEE;
+  border-radius: 30px;
+  padding: .5rem 3rem;
+  margin-top: 20px;
+}
+.pic img {
+  max-width: 100%;
+  width: 32%;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.pic {
+  list-style: none;
+}
+#Random {
+  margin-bottom: 50px;
+}
+.copyright {
+  bottom: 0;
+  position: absolute;
+  color: #000;
+  font-family: Lato;
+  font-size: 1em;
+  font-weight: bold;
+}
