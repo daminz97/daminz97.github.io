@@ -22,11 +22,13 @@ h3 {
 
 .list-inline {
 	list-style-type: none;
-  	margin: 0;
-  	padding-top: 50px;
-    margin-bottom: 40px;
-  	text-align: center;
-    padding-bottom: 50px;
+  margin: 0;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  vertical-align: center;
+  padding-bottom: 50px;
+  height: 100%;
 }
 
 .list-inline-item {
@@ -121,7 +123,7 @@ a: active {
     color: #333;
 }
 
-footer{
+.footer{
   border-top: 1px #DDDDDD solid;
   bottom: 0;
   height: 20px;
