@@ -1,0 +1,229 @@
+@media (min-width: 768px){
+  .homebtn {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: inline-block;
+    padding-right: 50px;
+    background: #e9ecef;
+  }
+  .menu {
+    width: 130px;
+    height: 350px;
+    list-style: none;
+  }
+  .menu li {
+    width: 130px;
+    height: 130px;
+  }
+  #home {
+    display: none;
+  }
+  #homebtn {
+    height: 130px;
+    width: 130px;
+  }
+  p{
+    padding:10px;
+    text-decoration: none;
+    font-family: lato;
+    text-transform:uppercase;
+    font-size: 12px;
+    color: #333;
+    float:left;
+  }
+  .social-gp{
+    bottom: 0;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    vertical-align: center;
+  }
+  .social-gp li {
+    padding-bottom: 10px;
+  }
+  .social-gp a {
+    color: #000;
+    font-size: 25px;
+    font-family: lato;
+  }
+  .copyright {
+    bottom: 0;
+    position: absolute;
+    color: #000;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .copyright-bot{
+    display: none;
+  }
+  .content {
+    padding-left: 250px;
+    padding-top: -100px;
+  }
+  h1 {
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 300%;
+    font-family: lato;
+  }
+  span {
+    font-weight: bolder;
+    font-family: lato;
+  }
+  .basicinfo {
+    background: #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: lato;
+  }
+  .infolist {
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 50px;
+    text-indent: -30px;
+  }
+  .infolist li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .infolist li a {
+    color: #000;
+    font-family: lato;
+  }
+  .line {
+    height: 1px;
+    border: none;
+    border-top:1px solid #000;
+  }
+  .iconlist i{
+    color: #000;
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .social-gp-bot{
+    display: none;
+  }
+}
+
+
+
+
+/* mobile version */
+
+@media (max-width: 768px){
+  .menu{
+    list-style: none;
+  }
+  #home {
+    color: #000;
+    text-decoration: none;
+    float: left;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Lato;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #home:link{
+    text-decoration: none;
+    color: #000;}
+  #home:visited{
+    text-decoration: none;
+    color: #000;}
+  #home:hover{
+    text-decoration: none;
+    color: #000;}
+  #home:active{
+    text-decoration: none;
+    color: #000;}
+  #homebtn{
+    height: 50px;
+    width: 50px;
+    vertical-align: center;
+  }
+  .copyright{
+    display: none;
+  }
+  .copyright {
+    bottom: 0;
+    position: absolute;
+    color: #000;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .social-gp{
+    display: none;
+  }
+  h1 {
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 300%;
+    font-family: lato;
+  }
+  span {
+    font-weight: bolder;
+    font-family: lato;
+  }
+  .basicinfo {
+    background: #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: lato;
+  }
+  .infolist {
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 50px;
+    text-indent: -30px;
+  }
+  .infolist li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .infolist li a {
+    color: #000;
+    font-family: lato;
+  }
+  .line {
+    height: 1px;
+    border: none;
+    border-top:1px solid #000;
+  }
+  .iconlist i{
+    color: #000;
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .social-gp-bot{
+    text-align: center;
+    vertical-align: center;
+  }
+  .social-gp-bot a{
+    color: #000;
+    padding-right: 10px;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .copyright-bot{
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    font-family: Lato;
+    font-weight: bold;
+  }
+}
