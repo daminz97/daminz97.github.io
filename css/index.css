@@ -2,10 +2,6 @@
   body {
     background: #ffffff;
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   #lang-cn {
     text-align: center;
     margin-bottom: 30px;
@@ -34,12 +30,6 @@
     color: #000;
     width: 100%;
   }
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   .cap {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -51,28 +41,14 @@
     font-size: 600%;
     font-weight: bolder;
     font-family: Lato;
-<<<<<<< HEAD
     color: #000;
-=======
-<<<<<<< HEAD
-    color: #000;
-=======
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   h6 {
     text-align: center;
     font-weight: bolder;
     font-family: Lato;
-<<<<<<< HEAD
     color: #000;
-=======
-<<<<<<< HEAD
-    color: #000;
-=======
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   h3 {
@@ -81,24 +57,11 @@
     font-weight: bolder;
     font-family: Lato;
     font-variant: small-caps;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
     color: #000;
   }
 
   h3 a {
     border-bottom: solid 2px #000;
-<<<<<<< HEAD
-=======
-=======
-  }
-
-  h3 a {
-    border-bottom: solid 2px #333;
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   .table{
@@ -175,24 +138,12 @@
 
   a:link {
       text-decoration: none;
-<<<<<<< HEAD
       color: #000;
-=======
-<<<<<<< HEAD
-      color: #000;
-=======
-      color: #333;
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
       font-weight: bolder;
       font-family: Lato;
   }
   a:visited {
       text-decoration: none;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
       color: #000;
   }
   a:hover {
@@ -202,20 +153,6 @@
   a: active {
       text-decoration: none;
       color: #000;
-<<<<<<< HEAD
-=======
-=======
-      color: #333;
-  }
-  a:hover {
-      text-decoration: none;
-      color: #333;
-  }
-  a: active {
-      text-decoration: none;
-      color: #333;
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   .footer{
@@ -255,10 +192,6 @@
   body {
     background: #ffffff;
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   #lang-cn {
     text-align: center;
     margin-bottom: 30px;
@@ -287,11 +220,6 @@
     color: #000;
     width: 100%;
   }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
 
   .cap {
     padding-top: 50px;
@@ -304,28 +232,14 @@
     font-size: 600%;
     font-weight: bolder;
     font-family: Lato;
-<<<<<<< HEAD
     color: #000;
-=======
-<<<<<<< HEAD
-    color: #000;
-=======
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   h6 {
     text-align: center;
     font-weight: bolder;
     font-family: Lato;
-<<<<<<< HEAD
     color: #000;
-=======
-<<<<<<< HEAD
-    color: #000;
-=======
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   h3 {
@@ -334,24 +248,11 @@
     font-weight: bolder;
     font-family: Lato;
     font-variant: small-caps;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
     color: #000;
   }
 
   h3 a {
     border-bottom: solid 2px #000;
-<<<<<<< HEAD
-=======
-=======
-  }
-
-  h3 a {
-    border-bottom: solid 2px #333;
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   .table{
@@ -426,24 +327,12 @@
 
   a:link {
       text-decoration: none;
-<<<<<<< HEAD
       color: #000;
-=======
-<<<<<<< HEAD
-      color: #000;
-=======
-      color: #333;
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
       font-weight: bolder;
       font-family: Lato;
   }
   a:visited {
       text-decoration: none;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
       color: #000;
   }
   a:hover {
@@ -453,20 +342,6 @@
   a: active {
       text-decoration: none;
       color: #000;
-<<<<<<< HEAD
-=======
-=======
-      color: #333;
-  }
-  a:hover {
-      text-decoration: none;
-      color: #333;
-  }
-  a: active {
-      text-decoration: none;
-      color: #333;
->>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
->>>>>>> 15eec0c1e5b3099bfcc2e88cb3be2e774fb8fb8c
   }
 
   .footer{
