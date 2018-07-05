@@ -2,6 +2,7 @@
   body {
     background: #ffffff;
   }
+<<<<<<< HEAD
   #lang-cn {
     text-align: center;
     margin-bottom: 30px;
@@ -30,6 +31,9 @@
     color: #000;
     width: 100%;
   }
+=======
+
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   .cap {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -41,14 +45,20 @@
     font-size: 600%;
     font-weight: bolder;
     font-family: Lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   h6 {
     text-align: center;
     font-weight: bolder;
     font-family: Lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   h3 {
@@ -57,11 +67,18 @@
     font-weight: bolder;
     font-family: Lato;
     font-variant: small-caps;
+<<<<<<< HEAD
     color: #000;
   }
 
   h3 a {
     border-bottom: solid 2px #000;
+=======
+  }
+
+  h3 a {
+    border-bottom: solid 2px #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   .table{
@@ -138,12 +155,17 @@
 
   a:link {
       text-decoration: none;
+<<<<<<< HEAD
       color: #000;
+=======
+      color: #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
       font-weight: bolder;
       font-family: Lato;
   }
   a:visited {
       text-decoration: none;
+<<<<<<< HEAD
       color: #000;
   }
   a:hover {
@@ -153,6 +175,17 @@
   a: active {
       text-decoration: none;
       color: #000;
+=======
+      color: #333;
+  }
+  a:hover {
+      text-decoration: none;
+      color: #333;
+  }
+  a: active {
+      text-decoration: none;
+      color: #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   .footer{
@@ -192,6 +225,7 @@
   body {
     background: #ffffff;
   }
+<<<<<<< HEAD
   #lang-cn {
     text-align: center;
     margin-bottom: 30px;
@@ -220,6 +254,8 @@
     color: #000;
     width: 100%;
   }
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
 
   .cap {
     padding-top: 50px;
@@ -232,14 +268,20 @@
     font-size: 600%;
     font-weight: bolder;
     font-family: Lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   h6 {
     text-align: center;
     font-weight: bolder;
     font-family: Lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   h3 {
@@ -248,11 +290,18 @@
     font-weight: bolder;
     font-family: Lato;
     font-variant: small-caps;
+<<<<<<< HEAD
     color: #000;
   }
 
   h3 a {
     border-bottom: solid 2px #000;
+=======
+  }
+
+  h3 a {
+    border-bottom: solid 2px #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   .table{
@@ -327,12 +376,17 @@
 
   a:link {
       text-decoration: none;
+<<<<<<< HEAD
       color: #000;
+=======
+      color: #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
       font-weight: bolder;
       font-family: Lato;
   }
   a:visited {
       text-decoration: none;
+<<<<<<< HEAD
       color: #000;
   }
   a:hover {
@@ -342,6 +396,17 @@
   a: active {
       text-decoration: none;
       color: #000;
+=======
+      color: #333;
+  }
+  a:hover {
+      text-decoration: none;
+      color: #333;
+  }
+  a: active {
+      text-decoration: none;
+      color: #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
 
   .footer{

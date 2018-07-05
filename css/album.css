@@ -1,4 +1,5 @@
 @media (min-width: 768px){
+<<<<<<< HEAD
   #lang-cn {
     text-align: center;
   }
@@ -32,21 +33,44 @@
   }
   .navbar {
     width: 100%;
+=======
+  body {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    display: block;
+    padding-left: 250px;
+    margin-top: 20px;
+  }
+  .navbar {
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     list-style: none;
   }
   .navbar li {
     float: left;
     font-family: Lato;
     font-size: 1rem;
+<<<<<<< HEAD
     font-weight: bolder;
     text-decoration: none;
     display: inline-block;
     line-height: bolder;
+=======
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    line-height: normal;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     padding: .5rem 1rem;
     margin-right: 10px;
     margin-bottom: 5px;
     height: auto;
+<<<<<<< HEAD
     border: 2px solid;
+=======
+    border: 1px solid;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     border-radius: 30px;
     vertical-align: center;
     -webkit-appearance: none;
@@ -83,17 +107,31 @@
     padding-right: 50px;
     background: #e9ecef;
   }
+<<<<<<< HEAD
   #home {
     width: 130px;
     height: 130px;
   }
   #navhome {
+=======
+  .menu {
+    width: 130px;
+    height: 350px;
+    list-style: none;
+  }
+  .menu li {
+    width: 130px;
+    height: 130px;
+  }
+  #home {
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     display: none;
   }
   #homebtn {
     height: 130px;
     width: 130px;
   }
+<<<<<<< HEAD
   #fbtn {
     padding-left: 8px;
     padding-bottom: 100px;
@@ -129,13 +167,46 @@
   .btt:active{
     text-decoration: none;
     color: #000;}
+=======
+  #fbtn{
+    float: none;
+    display:block;
+    background: #000;
+    border: 2px #000 solid;
+    border-radius: 20px;
+    height: 70px;
+    margin: 20px 0px;
+  }
+  #fbtn p{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: center;
+  }
+  .btt:link{
+    text-decoration: none;
+    color: #fff}
+  .btt:visited{
+    text-decoration: none;
+    color: #fff}
+  .btt:hover{
+    text-decoration: none;
+    color: #fff}
+  .btt:active{
+    text-decoration: none;
+    color: #fff;}
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   p{
     padding:10px;
     text-decoration: none;
     font-family: lato;
     text-transform:uppercase;
     font-size: 12px;
+<<<<<<< HEAD
     color: #000;
+=======
+    color: #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     float:left;
   }
   .social-gp{
@@ -151,7 +222,10 @@
   .social-gp a {
     color: #000;
     font-size: 25px;
+<<<<<<< HEAD
     font-family: lato;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   .copyright {
     bottom: 0;
@@ -161,8 +235,13 @@
     font-size: 10px;
     font-weight: bold;
   }
+<<<<<<< HEAD
   .content {
     width: 100%;
+=======
+  .copyright-bot{
+    display: none;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   .photos{
     padding-left: 250px;
@@ -171,13 +250,18 @@
     float: left;
     font-family: Lato;
     font-weight: bolder;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 90%;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     background: #e9ecef;
     border: 1px solid;
     border-color: #e9ecef;
     border-radius: 30px;
     padding: .5rem 3rem;
     margin-top: 20px;
+<<<<<<< HEAD
     color: #000
   }
   .pic {
@@ -194,12 +278,35 @@
   .table-pic img {
     max-width: 300%;
     width: 100%;
+=======
+  }
+  .pic img {
+    max-width: 100%;
+    width: 45%;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .pic {
+    list-style: none;
+    padding-left: 100px;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   #Random {
     margin-bottom: 50px;
   }
+<<<<<<< HEAD
   .social-gp-bot{
     display: none;
+=======
+  .copyright {
+    bottom: 0;
+    position: absolute;
+    color: #000;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   .copyright-bot{
     display: none;
@@ -208,6 +315,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -279,6 +387,42 @@
     padding: 5px;
     border-radius: 10px;
     color: #000;
+=======
+/* mobile version */
+
+@media (max-width: 768px){
+  .menu{
+    list-style: none;
+  }
+  #home {
+    color: #000;
+    text-decoration: none;
+    float: left;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Lato;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  #home:link{
+    text-decoration: none;
+    color: #000;}
+  #home:visited{
+    text-decoration: none;
+    color: #000;}
+  #home:hover{
+    text-decoration: none;
+    color: #000;}
+  #home:active{
+    text-decoration: none;
+    color: #000;}
+  #homebtn{
+    height: 50px;
+    width: 50px;
+    vertical-align: center;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   #fbtn{
     display: none;
@@ -295,19 +439,34 @@
   .navbar li {
     font-family: Lato;
     font-size: 1rem;
+<<<<<<< HEAD
     font-weight: bolder;
     text-decoration: none;
     display: inline-block;
     line-height: bolder;
+=======
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    line-height: normal;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     padding: .5rem 1rem;
     margin-right: 10px;
     margin-bottom: 5px;
     height: auto;
+<<<<<<< HEAD
     border: 2px solid;
     border-radius: 30px;
     vertical-align: center;
     -webkit-appearance: none;
     color: #000;
+=======
+    border: 1px solid;
+    border-radius: 30px;
+    vertical-align: center;
+    -webkit-appearance: none;
+    color: #555;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     background-color: rgba(0, 0, 0, 0);
   }
   .navbar li a {
@@ -334,7 +493,11 @@
   .photos h1 {
     text-align: center;
     font-family: Lato;
+<<<<<<< HEAD
     font-weight: bolder;
+=======
+    font-weight: normal;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     width: auto;
     background: #e9ecef;
     border: 1px solid;
@@ -343,6 +506,7 @@
     padding: .5rem 3rem;
     margin-top: 20px;
   }
+<<<<<<< HEAD
   .pic {
     width: 100%;
 
@@ -353,6 +517,17 @@
   }
   .table-pic {
     display: none;
+=======
+  .pic img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .pic {
+    list-style: none;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   #Random {
     margin-bottom: 50px;

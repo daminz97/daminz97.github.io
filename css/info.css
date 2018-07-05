@@ -1,4 +1,5 @@
 @media (min-width: 768px){
+<<<<<<< HEAD
   #lang-cn {
     margin-top: 30px;
     text-align: center;
@@ -25,6 +26,8 @@
     border-radius: 10px;
     color: #000;
   }
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   .homebtn {
     position: fixed;
     left: 0;
@@ -39,11 +42,19 @@
     height: 350px;
     list-style: none;
   }
+<<<<<<< HEAD
   #home {
     width: 130px;
     height: 130px;
   }
   #navhome {
+=======
+  .menu li {
+    width: 130px;
+    height: 130px;
+  }
+  #home {
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     display: none;
   }
   #homebtn {
@@ -56,7 +67,11 @@
     font-family: lato;
     text-transform:uppercase;
     font-size: 12px;
+<<<<<<< HEAD
     color: #000;
+=======
+    color: #333;
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
     float:left;
   }
   .social-gp{
@@ -94,12 +109,18 @@
     padding-left: 50px;
     font-size: 300%;
     font-family: lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   span {
     font-weight: bolder;
     font-family: lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   .basicinfo {
     background: #e9ecef;
@@ -146,6 +167,7 @@
 /* mobile version */
 
 @media (max-width: 768px){
+<<<<<<< HEAD
   #lang-cn {
     position: relative;
     top: 0;
@@ -210,6 +232,50 @@
   .copyright {
     display: none;
   }
+=======
+  .menu{
+    list-style: none;
+  }
+  #home {
+    color: #000;
+    text-decoration: none;
+    float: left;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Lato;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #home:link{
+    text-decoration: none;
+    color: #000;}
+  #home:visited{
+    text-decoration: none;
+    color: #000;}
+  #home:hover{
+    text-decoration: none;
+    color: #000;}
+  #home:active{
+    text-decoration: none;
+    color: #000;}
+  #homebtn{
+    height: 50px;
+    width: 50px;
+    vertical-align: center;
+  }
+  .copyright{
+    display: none;
+  }
+  .copyright {
+    bottom: 0;
+    position: absolute;
+    color: #000;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+  }
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   .social-gp{
     display: none;
   }
@@ -218,12 +284,18 @@
     padding-left: 50px;
     font-size: 300%;
     font-family: lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   span {
     font-weight: bolder;
     font-family: lato;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> 57c8fb6443314a3b3233d277d9decf112f8660bc
   }
   .basicinfo {
     background: #e9ecef;
