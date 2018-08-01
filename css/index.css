@@ -2,34 +2,6 @@
   body {
     background: #ffffff;
   }
-  #lang-cn {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  #lang-cn a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-    border: solid 3px #000;
-    padding: 5px;
-    border-radius: 10px;
-    color: #000;
-    width: 100%;
-  }
-  #lang-en {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  #lang-en a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-    border: solid 3px #000;
-    padding: 5px;
-    border-radius: 10px;
-    color: #000;
-    width: 100%;
-  }
   .cap {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -63,7 +35,34 @@
   h3 a {
     border-bottom: solid 2px #000;
   }
-
+  #lang-cn {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #lang-cn a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    border: solid 3px #000;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    width: 100%;
+  }
+  #lang-en {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #lang-en a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    border: solid 3px #000;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    width: 100%;
+  }
   .table{
     vertical-align: center;
     text-align: center;
@@ -191,35 +190,6 @@
   body {
     background: #ffffff;
   }
-  #lang-cn {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  #lang-cn a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-    border: solid 3px #000;
-    padding: 5px;
-    border-radius: 10px;
-    color: #000;
-    width: 100%;
-  }
-  #lang-en {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  #lang-en a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-    border: solid 3px #000;
-    padding: 5px;
-    border-radius: 10px;
-    color: #000;
-    width: 100%;
-  }
-
   .cap {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -253,7 +223,34 @@
   h3 a {
     border-bottom: solid 2px #000;
   }
-
+  #lang-cn {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #lang-cn a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    border: solid 3px #000;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    width: 100%;
+  }
+  #lang-en {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #lang-en a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    border: solid 3px #000;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    width: 100%;
+  }
   .table{
     display: block;
     vertical-align: center;

@@ -1,4 +1,50 @@
 @media (min-width: 768px){
+  body {
+    width: 90%;
+  }
+  .homebtn {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: inline-block;
+    padding-right: 50px;
+    background: #e9ecef;
+  }
+  .menu {
+    width: 75%;
+    height: 350px;
+    list-style: none;
+  }
+  #navhome {
+    display: none;
+  }
+  #home {
+    width: 130px;
+    height: 130px;
+  }
+  #homebtn {
+    height: 130px;
+    width: 130px;
+  }
+  #fbtn {
+    padding-left: 8px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  #fbtn p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    border: solid 3px #000;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #fbtn a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+  }
   #lang-cn {
     text-align: center;
   }
@@ -23,8 +69,40 @@
     border-radius: 10px;
     color: #000;
   }
-  body {
-    width: 90%;
+  .btt:link{
+    text-decoration: none;
+    color: #000}
+  .btt:visited{
+    text-decoration: none;
+    color: #000}
+  .btt:hover{
+    text-decoration: none;
+    color: #000}
+  .btt:active{
+    text-decoration: none;
+    color: #000;}
+  .social-gp{
+    bottom: 0;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    vertical-align: center;
+  }
+  .social-gp li {
+    padding-bottom: 10px;
+  }
+  .social-gp a {
+    color: #000;
+    font-size: 25px;
+    font-family: lato;
+  }
+  .copyright {
+    bottom: 0;
+    position: absolute;
+    color: #000;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: bold;
   }
   .nav {
     width: 100%;
@@ -74,61 +152,6 @@
   .navbtn:active{
     text-decoration: none;
     color: #000;}
-  .homebtn {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    display: inline-block;
-    padding-right: 50px;
-    background: #e9ecef;
-  }
-  #home {
-    width: 130px;
-    height: 130px;
-  }
-  #navhome {
-    display: none;
-  }
-  #homebtn {
-    height: 130px;
-    width: 130px;
-  }
-  #fbtn {
-    padding-left: 8px;
-    padding-bottom: 100px;
-    text-align: center;
-  }
-  #fbtn p{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 25px;
-    border: solid 3px #000;
-    padding: 5px;
-    border-radius: 10px;
-  }
-  #fbtn a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: #000;
-  }
-  .menu {
-    width: 75%;
-    height: 350px;
-    list-style: none;
-  }
-  .btt:link{
-    text-decoration: none;
-    color: #000}
-  .btt:visited{
-    text-decoration: none;
-    color: #000}
-  .btt:hover{
-    text-decoration: none;
-    color: #000}
-  .btt:active{
-    text-decoration: none;
-    color: #000;}
   p{
     padding:10px;
     text-decoration: none;
@@ -138,29 +161,7 @@
     color: #000;
     float:left;
   }
-  .social-gp{
-    bottom: 0;
-    position: relative;
-    list-style: none;
-    text-align: center;
-    vertical-align: center;
-  }
-  .social-gp li {
-    padding-bottom: 10px;
-  }
-  .social-gp a {
-    color: #000;
-    font-size: 25px;
-    font-family: lato;
-  }
-  .copyright {
-    bottom: 0;
-    position: absolute;
-    color: #000;
-    font-family: Lato;
-    font-size: 10px;
-    font-weight: bold;
-  }
+
   .content {
     width: 100%;
   }
@@ -219,6 +220,34 @@
 /* mobile version */
 
 @media (max-width: 768px){
+  .menu{
+    list-style: none;
+    height: 80px;
+    background: #e9ecef;
+  }
+  #navhome {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+  }
+  #navhome a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    border: solid 3px #000;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+  }
+  #fbtn{
+    display: none;
+  }
+  #home {
+    display: none;
+  }
   #lang-cn {
     position: relative;
     top: 0;
@@ -254,34 +283,6 @@
     padding: 5px;
     border-radius: 10px;
     color: #000;
-  }
-  .menu{
-    list-style: none;
-    height: 80px;
-    background: #e9ecef;
-  }
-  #home {
-    display: none;
-  }
-  #navhome {
-    position: relative;
-    top: 0;
-    left: 0;
-    float: left;
-    text-align: center;
-    margin-top: 25px;
-  }
-  #navhome a{
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bolder;
-    border: solid 3px #000;
-    padding: 5px;
-    border-radius: 10px;
-    color: #000;
-  }
-  #fbtn{
-    display: none;
   }
   .social-gp{
     display: none;
