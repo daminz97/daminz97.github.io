@@ -9,7 +9,7 @@
     height: 100%;
     display: inline-block;
     padding-right: 50px;
-    background: #e9ecef;
+    background: #D5DBDB;
   }
   .menu {
     width: 75%;
@@ -168,14 +168,14 @@
   .photos{
     padding-left: 250px;
   }
-  .photos h1 {
+  h1 {
     float: left;
     font-family: Lato;
     font-weight: bolder;
     width: 100%;
-    background: #e9ecef;
+    background: #D5DBDB;
     border: 1px solid;
-    border-color: #e9ecef;
+    border-color: #D5DBDB;
     border-radius: 30px;
     padding: .5rem 3rem;
     margin-top: 20px;
@@ -223,7 +223,7 @@
   .menu{
     list-style: none;
     height: 80px;
-    background: #e9ecef;
+    background: #D5DBDB;
   }
   #navhome {
     position: relative;
@@ -337,9 +337,9 @@
     font-family: Lato;
     font-weight: bolder;
     width: auto;
-    background: #e9ecef;
+    background: #D5DBDB;
     border: 1px solid;
-    border-color: #e9ecef;
+    border-color: #D5DBDB;
     border-radius: 30px;
     padding: .5rem 3rem;
     margin-top: 20px;
