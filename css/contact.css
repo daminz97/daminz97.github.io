@@ -16,12 +16,20 @@ body {
 }
 .container {
   margin-top: 50px;
-  margin-bottom: 50px;
-  min-height: 77vh;
+  min-height: 79vh;
 }
 .container h1 {
   font-weight: bolder;
   font-size: 60px;
+}
+.info-icon {
+  color: black;
+}
+.info-icon:hover {
+  color: black;
+}
+.info-icon::after {
+  color: black;
 }
 .infolist th {
   font-size: 18px;
