@@ -16,7 +16,7 @@ body {
 }
 .container {
   margin-top: 50px;
-  min-height: 79vh;
+  min-height: 95%;
 }
 .container h1 {
   font-weight: bolder;
@@ -39,8 +39,8 @@ body {
   padding-left: 20px;
 }
 .footer {
-  height: 100%;
   width: 100%;
+  min-height: 5%;
 }
 .footer-item {
   float: right;
