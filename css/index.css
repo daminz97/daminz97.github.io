@@ -16,7 +16,7 @@ body {
   color: white;
 }
 .content {
-  text-align: center;
+  text-align: right;
   vertical-align: middle;
   min-height: 100vh;
   height: 100%;
@@ -26,25 +26,25 @@ body {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background-image: url('../pics/album/random/staircase.jpg');
+  background-image: url('../pics/website-bgp.jpg');
   background-size: cover;
   opacity: .7;
 }
 .content-txt {
-  color: white;
+  color: black;
   vertical-align: center;
   padding: 100px 20px 100px 20px;
 }
 .caption {
-  color: white;
+  color: black;
   padding: 60px 0;
   font-size: 100px;
   font-weight: normal;
 }
 .cap-content {
-  color: white;
+  color: black;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 .option {
   width: 100%;
