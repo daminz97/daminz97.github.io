@@ -146,14 +146,22 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+  .content-txt {
+    color: white;
+    vertical-align: center;
+    padding: 100px 20px 100px 20px;
+  }
   .caption {
     color: white;
     padding: 60px 0;
     font-size: 100px;
     font-weight: normal;
-    background-color: #1E2335;
-    display: inline;
-    border: 3px solid #1E2335;
+  }
+  .cap-content {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
   }
   .option-txt p {
     text-align: center;
@@ -165,10 +173,6 @@ body {
     font-weight: bold;
   }
   .background-img {
-    max-width: 100%;
-    height: auto;
-    background-image: url('../pics/website-bgp.jpg');
-    background-size: contain;
-    opacity: .6;
+    border-color: #1E2335;
   }
 }
