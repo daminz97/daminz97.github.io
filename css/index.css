@@ -173,10 +173,8 @@ body {
     font-weight: bold;
   }
   .background-img {
-    min-height: 100vh;
-    height: auto;
+    height: 90%;
     max-width: 100%;
     background-image: url('../pics/phone.jpeg');
-    background-size: auto;
   }
 }
