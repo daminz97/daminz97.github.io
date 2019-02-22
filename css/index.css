@@ -173,6 +173,10 @@ body {
     font-weight: bold;
   }
   .background-img {
-    border-color: #1E2335;
+    height: auto;
+    max-width: 100%;
+    background-image: url('../pics/phone.jpeg');
+    background-size: cover;
+    opacity: .6;
   }
 }
