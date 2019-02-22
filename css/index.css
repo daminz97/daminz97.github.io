@@ -28,7 +28,7 @@ body {
   width: 100%;
   background-image: url('../pics/website-bgp.jpg');
   background-size: cover;
-  opacity: .6;
+  opacity: .8;
 }
 .content-txt {
   color: black;
@@ -154,7 +154,7 @@ body {
   .caption {
     color: white;
     padding: 60px 0;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: normal;
   }
   .cap-content {
@@ -176,5 +176,7 @@ body {
     height: 90%;
     max-width: 100%;
     background-image: url('../pics/phone.jpeg');
+    background-position: center;
+    opacity: .99;
   }
 }
