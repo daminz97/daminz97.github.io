@@ -25,6 +25,32 @@ body {
   font-weight: bolder;
   font-size: 60px;
 }
+.container h3 {
+  font-weight: bolder;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+.container h5 {
+  padding-top: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  #resume1 {
+    visibility: visible;
+  }
+  #resume2 {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #resume1 {
+    display: none;
+    visibility: hidden;
+  }
+  #resume2 {
+    visibility: visible;
+  }
+}
 .info-icon {
   color: black;
 }
