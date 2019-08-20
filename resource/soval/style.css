@@ -1,0 +1,83 @@
+body{
+  background-color: #c8e6c9;
+}
+
+.body-content{
+  vertical-align: center;
+  text-align: center;
+}
+
+#home{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+.title h4{
+  font-size: 10em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.body-content{
+  text-align: center;
+  padding-top: 10%;
+  transition-delay: 2s;
+}
+
+#sovaltitle{
+}
+
+.content{
+  text-align: center;
+}
+
+.content ul{
+  list-style-type: none;
+}
+
+.content a{
+  display: block;
+  text-decoration: none;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #0d47a1;
+  border-radius: 5px;
+  background-color: #0d47a1;
+  color: #ffffff;
+  vertical-align: center;
+  line-height: 100px;
+  font-size: 3em;
+}
+
+#logout{
+  display: block;
+  text-decoration: none;
+  border: 1px solid #0d47a1;
+  border-radius: 5px;
+  background-color: #0d47a1;
+  color: #ffffff;
+  vertical-align: center;
+  line-height: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+#username{
+  display: none;
+  text-align: center;
+  border: 1px solid #0d47a1;
+  border-radius: 10px;
+  background-color: #0d47a1;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+#profile{
+  padding-top: 20px;
+  border: 1px solid #0d47a1;
+  border-radius: 10px;
+  background-color: #0d47a1;
+}
+
+

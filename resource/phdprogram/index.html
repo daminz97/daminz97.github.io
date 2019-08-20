@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+    <title>Getting into a top Computer Science Program</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="js/d3.js"></script>
+	<script type="text/javascript" src="js/dataprocessing.js"></script>
+	<script type="text/javascript" src="js/bar_chart.js"></script>
+	<script type="text/javascript" src="js/donut.js"></script>
+	<script type="text/javascript" src="js/heatmap.js"></script>
+	<script type="text/javascript" src="js/scatter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        rect:hover {
+            fill: orange;
+        }
+        #tooltip {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+            z-index:10000;
+        }
+        #tooltip.hidden{
+            display: none;
+        }
+        #tooltip p {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        
+        
+        #tooltipScatter{
+            position: absolute;
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+            z-index:100;
+        }
+        #tooltipScatter.hidden{
+            display: none;
+        }
+        
+        #tooltipScatter p {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        #map {
+          width: 100%;
+          height: 700px;
+        }
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+
+        .dot {
+          stroke: #000;
+        }
+       .container{
+        padding-bottom:40px;
+
+        } 
+        .btn:focus {
+          background-color: green !important;
+        }
+        .signature {
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="btn-group" id="years"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="overflow: scroll">
+                <div class="btn-group" data-toggle="button" aria-label="Basic example" id="countries"></div>
+            </div>
+        </div>
+       <div class="row" style="margin: 40px 0px; text-align: center;">
+            <div class="col">
+                <div id="tooltip" class="hidden">
+                    <p><strong id="university"></strong></p>
+                    <p><span id="value"></span></p>
+                </div>
+                <div id="barchart_university"></div>
+            </div>
+       </div>
+       <div class="row" style="overflow: scroll">
+           <div class="col" style="text-align: center;">
+               <div class="btn-group" data-toggle="button" aria-label="Basic example" id="schools"></div>
+           </div>
+       </div>
+       <div class="row" style="margin: 40px 0px; text-align: center;">
+            <div class="col">
+                <div id="tooltipScatter" class="hidden">
+                    <p><span id="value"></span></p>
+                    <p><span id="pub"></span></p>
+                    <p><span id="intern"></span></p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div id="donutchart"></div>
+                    </div>
+                    <div class="col-4">
+                        <div id="heatmap"></div>
+                    </div>
+                    <div class="col-4">
+                        <div id="scatter"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="signature"><a href="https://github.com/daminz97/Top6CS_University_Bias_Analysis">Github@Damin</a></div>
+
+</body>
+
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/maps.js"></script>
+<script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script type='text/javascript' src='data/toydata.json'></script>
+<script type='text/javascript' src='data/alldata.json'></script>
+
+<script>
+var query_year = "All"
+var query_country = "All"
+var query_school = "All"
+
+function set_year(value){
+    query_year = value;
+    create_barchart(query_country, query_year);
+    create_donut(query_school, query_year);
+    create_heatmap(query_school, query_year);
+    create_scatter(query_school, query_year);
+}
+function set_country(value){
+    query_country = value;
+    create_barchart(query_country, query_year);
+}
+function set_school(value){
+    query_school = value;
+    create_donut(query_school, query_year);
+    create_heatmap(query_school, query_year);
+    create_scatter(query_school, query_year);
+}
+
+$(document).ready(function(){
+    var years = alldata.map((d) => { return d["phdadmissionyear"]})
+    years = [... new Set(years)]
+    years = years.sort(function(a,b){return a-b});
+    years.push("All")
+    years.forEach(function (c){
+        $("#years").append( 
+            "<button class='btn btn-primary' onclick='set_year(\"" + c + "\");"
+            + "'>" 
+            + c + "</button>"
+        );
+    });
+
+    var countries = alldata.map((d) => { return d["undergradcountry"]})
+    countries = [... new Set(countries)]
+    countries.push("All")
+    countries.forEach(function (c){
+        var c_name = c
+        if (c == "United States of America"){
+            c_name = "USA";
+        }
+
+        $("#countries").append( 
+            "<button class='btn btn-secondary' onclick='set_country(\""+c+"\");'>" + c_name + "</button>"
+        );
+    });
+
+    var schools = alldata.map((d) => { return d["currentuniversity"]})
+    schools = [... new Set(schools)]
+    schools.push("All")
+    schools.forEach(function (c){
+        $("#schools").append( 
+            "<button class='btn btn-secondary' onclick='set_school(\"" + c + "\");"
+            + "'>" 
+            + c + "</button>"
+        );
+    });
+
+    create_barchart("All", "All");
+    create_donut("All", "All");
+    create_heatmap("All", "All");
+    create_scatter("All", "All");
+
+});
+
+
+
+//Width and height
+var w = 600;
+var h = 300;
+
+
+//Data
+var dataset = [ 35, 10, 5, 20, 25 ];
+
+//Create SVG element
+
+function create_simpleChart(){
+    dataset = [10,20,30,40,50]
+    //Width and height
+    var w = 600;
+    var h = 250;
+
+    //Create SVG element
+    var svg = d3.select("#simple")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+    var xScale = d3.scaleBand()
+                .domain(d3.range(dataset.length))
+                .rangeRound([0, w])
+                .paddingInner(0.05);
+
+    var yScale = d3.scaleLinear()
+                .domain([0, d3.max(dataset)])
+                .range([0, h]);
+
+
+    //Create bars
+    svg.selectAll("rect")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("x", function(d, i) {
+            return xScale(i);
+       })
+       .attr("y", function(d) {
+            return h - yScale(d);
+       })
+       .attr("width", xScale.bandwidth())
+       .attr("height", function(d) {
+            return yScale(d);
+       })
+       .attr("fill", function(d) {
+            return "rgb(0, 0, " + Math.round(3000 / d) + ")";
+       })
+       .on("mouseover", function(d) {
+
+            //Get this bar's x/y values, then augment for the tooltip
+            var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.bandwidth() / 2;
+            var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
+
+            //Update the tooltip position and value
+            d3.select("#tooltip")
+                .style("left", xPosition + "px")
+                .style("top", yPosition + "px")						
+                .select("#value")
+                .text(d);
+       
+            //Show the tooltip
+            d3.select("#tooltip").classed("hidden", false);
+
+       })
+       .on("mouseout", function() {
+       
+            //Hide the tooltip
+            d3.select("#tooltip").classed("hidden", true);
+            
+       })
+
+    svg.selectAll("rect")
+        .sort(function(a, b) {
+            return d3.descending(a, b);
+        })
+       .attr("x", function(d, i) {
+            return xScale(i);
+       });
+}
+</script>

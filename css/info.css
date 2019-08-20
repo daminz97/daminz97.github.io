@@ -23,33 +23,23 @@ body {
 }
 .container h1 {
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 2.5vw;
 }
 .container h3 {
   font-weight: bolder;
-  padding-top: 20px;
-  text-decoration: underline;
+  margin: 30px 0px 30px 0px;
+  font-size: 1.5vw;
+  color:white;
+  background-color: #555;
+  border: 8px solid #555;
 }
 .container h5 {
   padding-top: 10px;
+  text-decoration: underline;
 }
-@media only screen and (min-width: 1200px) {
-  #resume1 {
-    visibility: visible;
-  }
-  #resume2 {
-    display: none;
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  #resume1 {
-    display: none;
-    visibility: hidden;
-  }
-  #resume2 {
-    visibility: visible;
-  }
+.container span {
+  font-size: 0.9vw;
+  margin: 5px 5px;
 }
 .info-icon {
   color: black;
@@ -59,13 +49,6 @@ body {
 }
 .info-icon::after {
   color: black;
-}
-.infolist th {
-  font-size: 18px;
-}
-.infolist td {
-  font-size: 18px;
-  padding-left: 20px;
 }
 .contact {
   padding-top: 100px;
@@ -120,3 +103,55 @@ body {
   font-size: 1vw;
   font-weight: bolder;
 }
+@media only screen and (max-width: 1200px) {
+  .container h1 {
+    font-weight: bolder;
+    font-size: 6vw;
+  }
+  .container h3 {
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 5vw;
+    color:white;
+    background-color: #555;
+    border: 8px solid #555;
+  }
+  .container h5 {
+    padding-top: 10px;
+    text-decoration: underline;
+  }
+  .container span {
+    font-size: 2.5vw;
+    margin: 5px 5px;
+  }
+  .option-img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+  .subcap span {
+    font-size: 5vw;
+    color:white;
+    background-color: #555;
+    border: 10px solid #555;
+  }
+  .option-gp p {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 3vw;
+    color: #555;
+    font-weight: bold;
+  }
+  .footer-icon {
+    color: white;
+    font-size: 4vw;
+    padding: 0px 5px;
+    text-decoration: none;
+  }
+  .copyright span {
+    color: white;
+    font-size: 3vw;
+    font-weight: bolder;
+  }
+} 

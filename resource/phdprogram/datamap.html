@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="/js/datamaps.world.min.js"></script>
+  <script src="/js/dataprocessing.js"></script>
+  <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
+ 
+     
+     <script>
+       //basic map config with custom fills, mercator projection
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+        height: 500,
+        fills: {
+          defaultFill: '#EAEEE5',
+          v1: '#DAE2D4',
+		  v2: '#C8D6C4',
+		  v3: '#C8D6C4',
+		  v4: '#B4CAB3',
+		  v5: '#A3BEA6',
+		  v6: '#92B29C',
+		  v7: '#82A594',
+		  v8: '#719188',
+		  v9: '#617D7B',
+		  v10: '#506568',
+		  v11: '#404D54'
+        },
+        
+        data: {
+          USA: {
+			fillKey: 'v11',
+			students: 154
+			},
+		  CHN: {
+			fillKey: 'v10',
+			students: 53
+			},
+		  IND: {
+			fillKey: 'v9',
+			students: 47
+			},
+		  IRN: {
+			fillKey: 'v8',
+			students: 47
+			},
+		  TWN: {
+			fillKey: 'v7',
+			students: 8},
+		  PAK: {
+			fillKey: 'v6',
+			students: 4},
+		  GBR: {
+			fillKey: 'v6',
+			students: 4},
+		  CAN: {
+			fillKey: 'v5',
+			students: 3},
+		  ISR: {
+			fillKey: 'v5',
+			students: 3},
+		  GRC: {
+			fillKey: 'v5',
+			students: 3},
+		  ITA: {
+			fillKey: 'v4',
+			students: 2},
+		  KOR: {
+			fillKey: 'v4',
+			students: 2},
+		  JPN: {
+			fillKey: 'v2',
+			students: 1},
+		  DEU: {
+			fillKey: 'v2',
+			students: 1},
+		  TUR: {
+			fillKey: 'v2',
+			students: 1},
+		  CHE: {
+			fillKey: 'v2',
+			students: 1},
+		  VNM: {
+			fillKey: 'v2',
+			students: 1},
+		  HUN: {
+			fillKey: 'v2',
+			students: 1},
+		  AUS: {
+			fillKey: 'v2',
+			students: 1}    
+        },
+		geographyConfig: {
+            popupTemplate: function(geo, data) {
+                return ['<div class="hoverinfo"><strong>',
+                        'Number of Students from ' + geo.properties.name,
+                        ': ' + data.students,
+                        '</strong></div>'].join('');
+            }
+		},
+		done: function(datamap) {
+        datamap.svg.selectAll('.datamaps-subunit').on('click', function(geo) {
+            var country_id = geo.properties.name;
+			var uniCount = getUniversityCount(country_id);
+			console.log(uniCount);
+		});
+		}
+      })
+      
+     </script>
+</body>
