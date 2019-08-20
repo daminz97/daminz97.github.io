@@ -1,6 +1,10 @@
 body {
   height: 100%;
+  text-align: center;
   /* font-family: "Comic Sans MS", cursive, sans-serif, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif; */
+}
+.navbar {
+  background-color: #555555;
 }
 .nav-link {
   color: white;
@@ -16,19 +20,12 @@ body {
   color: white;
 }
 .content {
-  text-align: right;
+  text-align: left;
   vertical-align: middle;
-  min-height: 100vh;
-  height: 100%;
   width: 100%;
 }
-.background-img {
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  background-image: url('../pics/website-bgp.jpg');
-  background-size: cover;
-  opacity: .8;
+.background {
+  background-color: antiquewhite;
 }
 .content-txt {
   color: black;
@@ -42,50 +39,50 @@ body {
   font-weight: normal;
 }
 .cap-content {
-  color: white;
+  color: #555;
   font-size: 20px;
   font-weight: bold;
-  background-color: #1E2335;
-  text-align: right;
+  text-align: left;
   display: inline;
-  border: 3px solid #1E2335;
 }
 .subcap {
-  margin-top: 15px;
+  margin-top: 2px;
   text-align: left;
 }
+.subcap span {
+  font-size: 2vw;
+  color:white;
+  background-color: #555;
+  border: 10px solid #555;
+}
 .line {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .option {
-  width: 100%;
-  min-height: 50vh;
   padding: 30px;
   text-align: center;
-}
-/* .option-txt p {
-  text-align: center;
-  font-size: 1vw;
-  font-weight: normal;
-}
-.option-title {
-  font-size: 2vw;
-  font-weight: bold;
-} */
-.option-img {
-  height: 100%;
-  width: 70%;
-  transition: .2s ease;
-  backface-visibility: hidden;
-  padding: 5px;
-  border: 5px solid black;
-  border-radius: 50%;
 }
 .option-item {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.option-gp:hover .option-img {
+.option-gp p {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 1vw;
+  color: #555;
+  font-weight: bold;
+}
+.option-gp:hover {
+  color: #555555;
+}
+.option-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+/* .option-gp:hover .option-img {
   opacity: .4;
 }
 .option-gp:hover .layer {
@@ -93,9 +90,9 @@ body {
 }
 .option-img:hover {
   opacity: .4;
-  filter: alpha(opacity=40); /* for IE8 and earlier */
-}
-.layer {
+  filter: alpha(opacity=40);
+} */
+/* .layer {
   transition: .3s ease;
   opacity: 0;
   position: absolute;
@@ -105,42 +102,46 @@ body {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.option-txt {
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-}
+.option-title {
+  font-size: 2vw;
+  font-weight: bold;
+} */
 .footer {
   width: 100%;
+  text-align: center;
+  vertical-align: center;
+  background: #555555;
+}
+.icons {
+  padding: 30px 0px 10px 0px;
 }
 .footer-item {
-  float: right;
   color: white;
-  font-size: 15px;
-  float: right;
-}
-.copyright {
-  float: left;
-  left: 0;
-  font-size: 12px;
-  font-weight: bolder;
+  text-align: center;
+  display: inline;
 }
 .footer-icon {
-  float: right;
-  right: 0;
-  color: black;
-  font-size: 20px;
-  padding: 10px 5px;
+  color: white;
+  font-size: 2vw;
+  padding: 0px 5px;
   text-decoration: none;
 }
 .footer-icon:hover {
-  color: black;
+  color: white;
 }
 .footer-icon::after {
-  color: black;
+  color: white;
+}
+.copyright {
+  padding: 10px 20px 30px 20px;
+}
+.copyright span {
+  color: white;
+  font-size: 1vw;
+  font-weight: bolder;
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .option-txt p {
     text-align: center;
     font-size: 1vw;
@@ -151,39 +152,37 @@ body {
     font-weight: bold;
   }
 }
+*/
 
 @media only screen and (max-width: 1200px) {
-  .content-txt {
-    color: white;
-    vertical-align: center;
-    padding: 100px 20px 100px 20px;
+  .option-img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
   }
-  .caption {
-    color: white;
-    padding: 60px 0;
-    font-size: 70px;
-    font-weight: normal;
+  .subcap span {
+    font-size: 5vw;
+    color:white;
+    background-color: #555;
+    border: 10px solid #555;
   }
-  .cap-content {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-  }
-  .option-txt p {
-    text-align: center;
+  .option-gp p {
+    text-decoration: none;
+    margin-top: 10px;
     font-size: 3vw;
-    font-weight: normal;
-  }
-  .option-title {
-    font-size: 4.5vw;
+    color: #555;
     font-weight: bold;
   }
-  .background-img {
-    height: 90%;
-    max-width: 100%;
-    background-image: url('../pics/phone.jpeg');
-    background-position: center;
-    opacity: .99;
+  .footer-icon {
+    color: white;
+    font-size: 4vw;
+    padding: 0px 5px;
+    text-decoration: none;
   }
-}
+  .copyright span {
+    color: white;
+    font-size: 3vw;
+    font-weight: bolder;
+  }
+} 
