@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Travel the World</title>
+    <link rel="icon" href="pics/tabIcon/tab-icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css'>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 id="caption">Footprints Around the World</h1>
+        <section>
+            <h3 class="subtitle">Major Cities</h3>
+            <div class="map" id="majorcitymap"></div>
+        </section>
+        <hr>
+        <section>
+            <h3 class="subtitle">Heatmap</h3>
+            <div class="map" id="heatmap"></div>
+        </section>
+        <a id="githublink" href="https://github.com/daminz97/worldmap">Github@daminz97</a>
+    </div>
+    <script>
+        var content = document.getElementById('content');
+        content.style.textAlign = 'center';
+        content.style.padding = '20px 50px';
+        var cap = document.getElementById('caption');
+        cap.style.textDecoration = 'underline';
+        cap.style.color = 'white';
+        cap.style.fontWeight = 'bolder';
+        cap.style.fontSize = '4vw';
+        cap.style.margin = '50px';
+        var sec = document.getElementsByTagName('section');
+        for (i = 0; i < sec.length; i++) {
+            sec[i].style.padding = '20px 50px';
+        }
+        var subt = document.getElementsByClassName('subtitle');
+        for (i = 0; i < subt.length; i++) {
+            subt[i].style.color = 'white';
+            subt[i].style.textAlign = 'left';
+            subt[i].style.padding = '10px';
+        }
+        var map = document.getElementsByClassName('map');
+        for (i = 0; i < map.length; i++) {
+            map[i].style.height = '400px';
+            map[i].style.width = '100%';
+        }
+        var glink = document.getElementById('githublink');
+        glink.style.color = 'white';
+        glink.style.fontWeight = 'bolder';
+        glink.style.margin = '50px';
+    </script>
+    <script>
+        var map;
+        var hm, hmlayer;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('majorcitymap'), {
+                center: { lat: 39.223466, lng: 150.401209 },
+                zoom: 2.5
+            });
+            var cities = [
+                ['Boston', 42.360081, -71.058884],
+                ['Chicago', 41.878113, -87.629799],
+                ['Los Angeles', 34.052240, -118.243340],
+                ['Las Vegas', 36.169941, -115.139832],
+                ['Salt Lake City', 40.760780, -111.891045],
+                ['Miami', 25.761681, -80.191788],
+                ['Tampa', 27.950575, -82.457176],
+                ['Key West', 24.555059, -81.779984],
+                ['Orlando', 28.538336, -81.379234],
+                ['San Fransisco', 37.774929, -122.419418],
+                ['Buffalo', 42.886448, -78.878372],
+                ['Indianapolis', 39.768402, -86.158066],
+                ['Denver', 39.739235, -104.990250],
+                ['Beijing', 39.904202, 116.407394],
+                ['Xi An', 34.269421, 108.906174],
+                ['Shanghai', 31.230391, 121.473701],
+                ['Zhengzhou', 34.746613, 113.625328],
+                ['Hangzhou', 30.274084, 120.155067],
+                ['Luxembourg City', 49.610001, 6.129630],
+                ['Hainan', 19.566395, 109.949684]
+            ];
+            var towns = [
+                ['Amherst', 42.373222, -72.519852],
+                ['Reno', 39.529633, -119.813805],
+                ['Provincetown', 42.052952, -70.186447],
+                ['Nantucket', 41.283470, -70.099449],
+                ['Martha\'s Vineyard', 41.380497, -70.645470],
+                ['Ann Arbor', 42.280827, -83.743034],
+                ['West Lafayette', 40.425869, -86.908066],
+                ['Santa Monica', 34.019455, -118.491188],
+                ['Niagara Fall', 41.689621, -71.157501],
+                ['Big Sur', 36.361477, -121.856262],
+                ['Monterey', 36.600239, -121.894676],
+                ['Palo Alto', 37.441883, -122.143021],
+                ['Lake Tahoe', 38.941631, -119.977219],
+                ['Great Salt Lake', 40.876900, -111.937523],
+                ['Grand Canyon', 36.106964, -112.112999],
+                ['Horseshoe Bend', 43.914612, -116.197899],
+                ['Monument Valley', 36.998028, -110.098457],
+                ['Glen Canyon', 37.658096, -111.093208],
+                ['Hoover Dam', 36.016068, -114.737732],
+                ['Gongyi', 34.741773, 113.046126],
+                ['Luoyang', 34.681931, 112.468132],
+            ]
+            var heatPoints = [];
+            cities.forEach(function (elem) {
+                heatPoints.push({ location: new google.maps.LatLng(elem[1], elem[2]), weight: 1 });
+                var infowindow = new google.maps.InfoWindow({
+                    content: elem[0]
+                });
+                var marker = new google.maps.Marker({
+                    position: { lat: elem[1], lng: elem[2] },
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    title: elem[0]
+                });
+                marker.addListener('mouseover', function () {
+                    infowindow.open(map, marker);
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                });
+                marker.addListener('mouseout', function () {
+                    infowindow.close();
+                    marker.setAnimation(null);
+                });
+            });
+            towns.forEach(function (town) {
+                heatPoints.push({ location: new google.maps.LatLng(town[1], town[2]), weight: 0.5 });
+            })
+            hm = new google.maps.Map(document.getElementById('heatmap'), {
+                center: { lat: 39.223466, lng: 150.401209 },
+                zoom: 2.5,
+                styles: [
+                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#263c3f' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#6b9a76' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#38414e' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#212a37' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#9ca5b3' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#746855' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#1f2835' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#f3d19c' }]
+                    },
+                    {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#2f3948' }]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#17263c' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#515c6d' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{ color: '#17263c' }]
+                    }
+                ]
+            });
+            hmlayer = new google.maps.visualization.HeatmapLayer({
+                data: heatPoints,
+                map: hm,
+                radius: 20.0
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKEtGGkFjWXCZyY3okwFcpMOJKPaC20hA&callback=initMap"
+        async defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKEtGGkFjWXCZyY3okwFcpMOJKPaC20hA&libraries=visualization&callback=initMap"></script>
+</body>
+
+</html>
