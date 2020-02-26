@@ -28,27 +28,6 @@
     }
 }
 
-p {
-    margin-top: 0
-}
-
-a {
-    color: #1eaedb
-}
-
-a:hover {
-    color: #0fa0ce
-}
-
-.header {
-    background-color: #393b3c;
-    color: #ebebeb;
-}
-
-.langs ul {
-    list-style-type: none
-}
-
 .row {
     margin: 1% 0
 }
