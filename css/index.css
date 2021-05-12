@@ -15,6 +15,16 @@
     float: right;
 }
 
+.info-item-gp {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.info-item {
+    color: #393b3c;
+    display: inline-block;
+}
+
 @media (min-width:400px) {
     .container {
         width: 85%;
@@ -40,9 +50,12 @@ a:hover {
     color: #0fa0ce
 }
 
+.header-content{
+    padding: 10px 0 20px 0;
+}
+
 .header {
-    background-color: #393b3c;
-    color: #ebebeb;
+    color: #393b3c;
 }
 
 .langs ul {
@@ -54,7 +67,7 @@ a:hover {
 }
 
 #icons {
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center;
 }
 
