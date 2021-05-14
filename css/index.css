@@ -15,11 +15,16 @@
     float: right;
 }
 
+.interests {
+    padding-bottom: 20px;
+}
+
 .info-item-gp {
     position: absolute;
     bottom: 0;
     text-align: center;
 }
+
 .info-item {
     color: #393b3c;
     display: inline-block;
@@ -50,7 +55,7 @@ a:hover {
     color: #0fa0ce
 }
 
-.header-content{
+.header-content {
     padding: 10px 0 20px 0;
 }
 
@@ -69,6 +74,10 @@ a:hover {
 #icons {
     margin: auto auto;
     text-align: center;
+}
+
+.proj-ls {
+    display: inline-block;
 }
 
 .footer-item {
