@@ -51,7 +51,7 @@ const papers = [
 
 const projects = [
     ['#', 'E-Sports Training with HCI'],
-    ['#', 'GameLog v.2.0'],
+    ['https://github.com/daminz97/GameLog-v2', 'GameLog v.2.0'],
     ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
     ['https://github.com/daminz97/Flick', 'Flick'],
     ['https://github.com/daminz97/HCIProject', 'GameLog v.1.0'],
