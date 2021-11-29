@@ -27,17 +27,17 @@ const articles = [
 ];
 
 function add_article(link, title_en, title_cn, date) {
-    const a = $("<a>", {class: 'list-group-item list-group-item-action', href: link, target: '_blank'});
-    const div_title = $("<div>", {class: 'd-inline'});
-    const p_en = $("<p>", {class: 'lang-en'}).text(title_en);
-    const p_cn = $("<p>", {class: 'lang-cn'}).text(title_cn);
+    const a = $("<a>", { class: 'list-group-item list-group-item-action', href: link, target: '_blank' });
+    const div_title = $("<div>", { class: 'd-inline' });
+    const p_en = $("<p>", { class: 'lang-en' }).text(title_en);
+    const p_cn = $("<p>", { class: 'lang-cn' }).text(title_cn);
     div_title.append(p_en, p_cn);
-    const div_date = $("<div>", {class: 'd-inline badge badge-primary text-wrap float-right', style: 'width: 6rem'}).text(date);
+    const div_date = $("<div>", { class: 'd-inline badge badge-primary text-wrap float-right', style: 'width: 6rem' }).text(date);
     a.append(div_title, div_date);
     return a;
 }
 
-for (let i=0; i<articles.length; i++) {
+for (let i = 0; i < articles.length; i++) {
     console.log(articles[i]);
     $('#translation_gp').append(add_article(articles[i][0], articles[i][1], articles[i][2], articles[i][3]));
 }
@@ -45,6 +45,7 @@ for (let i=0; i<articles.length; i++) {
 
 // update index page
 const papers = [
+    ['#', 'Examination of Gender Bias in News Articles'],
     ['#', 'A \"Bias\" Report in NLP'],
     ['#', 'Bias in Statements'],
 ];
@@ -64,15 +65,15 @@ const projects = [
 ];
 
 function add_paper_or_project(link, title) {
-    const li = $('<li>', {class: 'font-weight-normal'});
-    const a = $('<a>', {href: link}).text(title);
+    const li = $('<li>', { class: 'font-weight-normal' });
+    const a = $('<a>', { href: link }).text(title);
     return li.append(a);
 }
 
-for (let i=0; i<papers.length; i++) {
+for (let i = 0; i < papers.length; i++) {
     $('#paper_list').append(add_paper_or_project(papers[i][0], papers[i][1]));
 }
 
-for (let i=0; i<projects.length; i++) {
+for (let i = 0; i < projects.length; i++) {
     $('#project_list').append(add_paper_or_project(projects[i][0], projects[i][1]));
 }
