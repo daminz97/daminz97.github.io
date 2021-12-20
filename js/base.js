@@ -44,6 +44,12 @@ for (let i = 0; i < articles.length; i++) {
 
 
 // update index page
+const educations = [
+    'PhD, Natural Language Processing, Purdue University, Present',
+    'MS, Computer and Information Technology, Purdue University, 2021',
+    'BS, Computer Science, University of Massachusetts Amherst, 2019',
+]
+
 const papers = [
     ['#', 'Examination of Gender Bias in News Articles'],
     ['#', 'A \"Bias\" Report in NLP'],
@@ -51,11 +57,10 @@ const papers = [
 ];
 
 const projects = [
-    ['#', 'E-Sports Training with HCI'],
-    ['https://github.com/daminz97/GameLog-v2', 'GameLog v.2.0'],
+    ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
     ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
     ['https://github.com/daminz97/Flick', 'Flick'],
-    ['https://github.com/daminz97/HCIProject', 'GameLog v.1.0'],
+    ['https://github.com/daminz97/HCIProject', 'GameLog v1'],
     ['./resource/soval/index.html', 'Auto Quote'],
     ['https://github.com/daminz97/MobileScanner', 'MobileScanner'],
     ['https://github.com/daminz97/Movie_Recommendation_System', 'Movie Recommendation System'],
@@ -64,10 +69,20 @@ const projects = [
     ['https://github.com/daminz97/price-alert', 'Price Alert'],
 ];
 
+function add_education(education) {
+    const li = $('<li>', { class: 'font-weight-normal' });
+    const a = $('<p>').text(education);
+    return li.append(a);
+}
+
 function add_paper_or_project(link, title) {
     const li = $('<li>', { class: 'font-weight-normal' });
     const a = $('<a>', { href: link }).text(title);
     return li.append(a);
+}
+
+for (let i = 0; i < papers.length; i++) {
+    $('#educations').append(add_education(educations[i]));
 }
 
 for (let i = 0; i < papers.length; i++) {
