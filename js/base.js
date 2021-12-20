@@ -47,7 +47,7 @@ for (let i = 0; i < articles.length; i++) {
 const educations = [
     'PhD, Natural Language Processing, Purdue University, Present',
     'MS, Computer and Information Technology, Purdue University, 2021',
-    'BS, Computer Science, University of Massachusetts Amherst, 2019',
+    'BS, Computer Science, University of Massachusetts Amherst, 2019'
 ]
 
 const papers = [
