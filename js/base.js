@@ -44,16 +44,21 @@ for (let i = 0; i < articles.length; i++) {
 
 
 // update index page
+const updates = [
+    'March 2022: Full paper accepted at FLAIRS-35!',
+    'November 2021: Defended my thesis!',
+    'May 2021: Passed my thesis proposal defense!',
+];
+
 const educations = [
-    'PhD, Natural Language Processing, Purdue University, Present',
-    'MS, Computer and Information Technology, Purdue University, 2021',
-    'BS, Computer Science, University of Massachusetts Amherst, 2019',
+    'PhD, Natural Language Processing, Purdue University, 2022-Present',
+    'MS, Computer and Information Technology, Purdue University, 2019-2021',
+    'BS, Computer Science, University of Massachusetts Amherst, 2015-2019',
 ]
 
 const papers = [
-    ['#', 'Examination of Gender Bias in News Articles'],
-    ['#', 'A \"Bias\" Report in NLP'],
-    ['#', 'Bias in Statements'],
+    ['#', 'Examining Stereotypes in News Articles'],
+    ['https://hammer.purdue.edu/articles/thesis/Examination_of_Gender_Bias_in_News_Articles/17148674', 'Examination of Gender Bias in News Articles'],
 ];
 
 const projects = [
@@ -69,20 +74,29 @@ const projects = [
     ['https://github.com/daminz97/price-alert', 'Price Alert'],
 ];
 
+function add_update(update) {
+    const li = $('<li>', { class: 'font-weight-normal' });
+    const p = $('<p>').text(update);
+
+    return li.append(p);
+}
+
 function add_education(education) {
     const li = $('<li>', { class: 'font-weight-normal' });
     const a = $('<p>').text(education);
+
     return li.append(a);
 }
 
 function add_paper_or_project(link, title) {
     const li = $('<li>', { class: 'font-weight-normal' });
-    const a = $('<a>', { href: link }).text(title);
+    const a = $('<a>', { href: link, target: '_blank' }).text(title);
+
     return li.append(a);
 }
 
-for (let i = 0; i < papers.length; i++) {
-    $('#educations').append(add_education(educations[i]));
+for (let i = 0; i < updates.length; i++) {
+    $('#updates').append(add_update(updates[i]));
 }
 
 for (let i = 0; i < papers.length; i++) {
@@ -91,4 +105,8 @@ for (let i = 0; i < papers.length; i++) {
 
 for (let i = 0; i < projects.length; i++) {
     $('#project_list').append(add_paper_or_project(projects[i][0], projects[i][1]));
+}
+
+for (let i = 0; i < educations.length; i++) {
+    $('#educations').append(add_education(educations[i]));
 }
