@@ -57,7 +57,7 @@ const educations = [
 ]
 
 const papers = [
-    ['#', 'Examining Stereotypes in News Articles'],
+    ['https://journals.flvc.org/FLAIRS/article/view/130642/133944', 'Examining Stereotypes in News Articles'],
     ['https://hammer.purdue.edu/articles/thesis/Examination_of_Gender_Bias_in_News_Articles/17148674', 'Examination of Gender Bias in News Articles'],
 ];
 
