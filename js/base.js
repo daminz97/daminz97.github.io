@@ -62,6 +62,7 @@ const papers = [
 ];
 
 const projects = [
+    ['', 'ConvIE: Zero-shot Conversation Information Extraction'],
     ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
     ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
     ['https://github.com/daminz97/Flick', 'Flick'],
