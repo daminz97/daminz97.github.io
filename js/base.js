@@ -46,6 +46,7 @@ function load_page() {
 
     // update index page
     const updates = [
+        'June 2022: Create and design ConvIE at Happy',
         'March 2022: Full paper accepted at FLAIRS-35!',
         'November 2021: Defended my thesis!',
         'May 2021: Passed my thesis proposal defense!',
@@ -63,7 +64,7 @@ function load_page() {
     ];
     
     const projects = [
-        ['', 'ConvIE: Zero-shot Conversation Information Extraction'],
+        ['', 'ConvIE: End-to-end Conversation Information Extraction System'],
         ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
         ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
         ['https://github.com/daminz97/Flick', 'Flick'],
