@@ -61,8 +61,9 @@ function load_page() {
         ['https://journals.flvc.org/FLAIRS/article/view/130642/133944', 'Examining Stereotypes in News Articles'],
         ['https://hammer.purdue.edu/articles/thesis/Examination_of_Gender_Bias_in_News_Articles/17148674', 'Examination of Gender Bias in News Articles'],
     ];
-
+    
     const projects = [
+        ['', 'ConvIE: Zero-shot Conversation Information Extraction'],
         ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
         ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
         ['https://github.com/daminz97/Flick', 'Flick'],
