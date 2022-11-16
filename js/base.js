@@ -64,6 +64,8 @@ function load_page() {
     ];
     
     const projects = [
+        ['', 'Counteracts: Testing Stereotypical Representation in Language Models'],
+        ['', 'Rich Context Data Augmentation (Ongoing)'],
         ['', 'ConvIE: End-to-end Conversation Information Extraction System'],
         ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
         ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
