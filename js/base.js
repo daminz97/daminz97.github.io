@@ -65,6 +65,7 @@ function load_page() {
     ];
     
     const projects = [
+        ['https://github.com/daminz97/gscholar-search.git', 'GScholar Search Toolkit'],
         ['', 'Rich Context Data Augmentation (Ongoing)'],
         ['', 'ConvIE: End-to-end Conversation Information Extraction System'],
         ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
