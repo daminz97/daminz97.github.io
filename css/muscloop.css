@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.img-container img {
+    width: 20%;
+}
+.title {
+    margin: 2% 0 4% 0;
+}
+.policy-group {
+    margin-bottom: 2%;
+}
+#pp_cn {
+    text-align: left;
+    background-color: rgb(186, 186, 186, 0.3);
+    padding: 2%;
+    border-radius: 25px;
+}
+
+#pp_en {
+    text-align: left;
+    background-color: rgb(186, 186, 186, 0.3);
+    padding: 2%;
+    border-radius: 25px;
+}
