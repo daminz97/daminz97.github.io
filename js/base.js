@@ -47,6 +47,7 @@ function load_page() {
     // update index page
     const updates = [
         'June 2022: Designed and developed ConvIE at Happy the Movement, a startup in health industry',
+        'April 2022: Poster presentation at Purdue Polytechnic RIA 2022 Student Poster Sypothuim',
         'March 2022: Full paper accepted at FLAIRS-35!',
         'November 2021: Defended my thesis!',
         'May 2021: Passed my thesis proposal defense!',
@@ -59,9 +60,9 @@ function load_page() {
     ]
 
     const papers = [
+        ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models (Preprint under review)'],
         ['https://journals.flvc.org/FLAIRS/article/view/130642/133944', 'Examining Stereotypes in News Articles'],
         ['https://hammer.purdue.edu/articles/thesis/Examination_of_Gender_Bias_in_News_Articles/17148674', 'Examination of Gender Bias in News Articles'],
-        ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models'],
     ];
     
     const projects = [
