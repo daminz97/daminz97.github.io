@@ -59,14 +59,14 @@ function load_page() {
     ]
 
     const papers = [
+        ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models (Preprint under review)'],
         ['https://journals.flvc.org/FLAIRS/article/view/130642/133944', 'Examining Stereotypes in News Articles'],
         ['https://hammer.purdue.edu/articles/thesis/Examination_of_Gender_Bias_in_News_Articles/17148674', 'Examination of Gender Bias in News Articles'],
-        ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models'],
     ];
     
     const projects = [
         ['https://github.com/daminz97/gscholar-search.git', 'GScholar Search Toolkit'],
-        ['', 'Rich Context Data Augmentation (Ongoing)'],
+        ['', 'Rich Context Data Augmentation'],
         ['', 'ConvIE: End-to-end Conversation Information Extraction System'],
         ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
         ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
