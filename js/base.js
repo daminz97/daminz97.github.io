@@ -47,6 +47,7 @@ function load_page() {
     // update index page
     const updates = [
         'June 2022: Designed and developed ConvIE at Happy the Movement, a startup in health industry',
+        'April 2022: Poster presentation at Purdue Polytechnic RIA 2022 Student Poster Sypothuim',
         'March 2022: Full paper accepted at FLAIRS-35!',
         'November 2021: Defended my thesis!',
         'May 2021: Passed my thesis proposal defense!',
