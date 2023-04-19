@@ -66,7 +66,7 @@ function load_page() {
     ];
     
     const projects = [
-        ['', 'PikaPass'],
+        ['https://apps.apple.com/us/app/pikapass/id6447812288', 'PikaPass'],
         ['https://apps.apple.com/us/app/muscloop/id1669056757', 'Muscloop'],
         ['https://github.com/daminz97/gscholar-search.git', 'GScholar Search Toolkit'],
         ['', 'Rich Context Data Augmentation'],
