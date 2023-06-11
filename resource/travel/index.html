@@ -32,10 +32,10 @@
             <div class="map" id="majorcitymap"></div>
         </section>
         <hr>
-        <section>
+        <!-- <section>
             <h3 class="subtitle">Heatmap</h3>
             <div class="map" id="heatmap"></div>
-        </section>
+        </section> -->
         <a id="githublink" href="https://github.com/daminz97/worldmap">Github@daminz97</a>
     </div>
     <script>
@@ -70,7 +70,7 @@
     </script>
     <script>
         var map;
-        var hm, hmlayer;
+        // var hm, hmlayer;
         function initMap() {
             map = new google.maps.Map(document.getElementById('majorcitymap'), {
                 center: { lat: 39.223466, lng: 150.401209 },
@@ -236,10 +236,10 @@
             // });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKEtGGkFjWXCZyY3okwFcpMOJKPaC20hA&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvoeLV1ROjFGsj8-fqv-DtoLOpkXYPw2A&callback=initMap"
         async defer></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKEtGGkFjWXCZyY3okwFcpMOJKPaC20hA&libraries=visualization&callback=initMap"></script>
+    <!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKEtGGkFjWXCZyY3okwFcpMOJKPaC20hA&libraries=visualization&callback=initMap"></script> -->
 </body>
 
 </html>
