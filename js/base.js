@@ -47,7 +47,7 @@ function load_page() {
     // update index page
     const updates = [
         'June 2022: Designed and developed ConvIE at Happy the Movement, a startup in health industry',
-        'April 2022: Poster presentation at Purdue Polytechnic RIA 2022 Student Poster Sypothuim',
+        'April 2022: Poster presentation at Purdue Polytechnic RIA 2022 Student Poster Symposium',
         'March 2022: Full paper accepted at FLAIRS-35!',
         'November 2021: Defended my thesis!',
         'May 2021: Passed my thesis proposal defense!',
@@ -66,19 +66,20 @@ function load_page() {
     ];
     
     const projects = [
+        ['https://apps.apple.com/us/app/pikapass/id6447812288', 'PikaPass - Local Account Management'],
+        ['https://apps.apple.com/us/app/muscloop/id1669056757', 'Muscloop - Training Portfolio'],
         ['https://github.com/daminz97/gscholar-search.git', 'GScholar Search Toolkit'],
-        ['', 'Rich Context Data Augmentation (Ongoing)'],
-        ['', 'ConvIE: End-to-end Conversation Information Extraction System'],
+        ['', 'ConvIE: Language Model Integrated Conversation Information Extraction System'],
         ['https://github.com/daminz97/GameLog-v3', 'GameLog v3'],
         ['https://youtu.be/IKiJi5XbVNc', 'Bias in Statements'],
         ['https://github.com/daminz97/Flick', 'Flick'],
         ['https://github.com/daminz97/HCIProject', 'GameLog v1'],
         ['./resource/soval/index.html', 'Auto Quote'],
         ['https://github.com/daminz97/MobileScanner', 'MobileScanner'],
-        ['https://github.com/daminz97/Movie_Recommendation_System', 'Movie Recommendation System'],
-        ['https://github.com/daminz97/PC_Builder', 'PC Builder'],
+        // ['https://github.com/daminz97/Movie_Recommendation_System', 'Movie Recommendation System'],
+        // ['https://github.com/daminz97/PC_Builder', 'PC Builder'],
         ['./resource/phdprogram/index.html', 'Ph.D. Admission Visualization'],
-        ['https://github.com/daminz97/price-alert', 'Price Alert'],
+        // ['https://github.com/daminz97/price-alert', 'Price Alert'],
     ];
 
     function add_update(update) {
