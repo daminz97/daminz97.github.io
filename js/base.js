@@ -60,10 +60,12 @@ function load_page() {
     ]
 
     const papers = [
+        ['', 'Generic Communication Encoding (WIP)'],
+        ['', 'Taxonomy-based Checklist for Large Language Models Gender Bias Evaluation  (WIP)'],
+        ['https://www.mdpi.com/2071-1050/16/7/2721', 'Is Alexa Happy or Angry? Perceptions and Attributions of Emotional Displays of Smart Technologies in Residential Homes'],
         ['https://www.amazon.science/alexa-prize/proceedings/boilerbot-a-reliable-task-oriented-chatbot-enhanced-with-large-language-models', 'BoilerBot: A reliable task-oriented chatbot enhanced with large language models'],
-        ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models (under review)'],
+        ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models'],
         ['https://journals.flvc.org/FLAIRS/article/view/130642/133944', 'Examining Stereotypes in News Articles'],
-        ['https://hammer.purdue.edu/articles/thesis/Examination_of_Gender_Bias_in_News_Articles/17148674', 'Examination of Gender Bias in News Articles'],
     ];
     
     const projects = [
