@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.eba702c6.css",
-    "main.js": "/react/static/js/main.66696e62.js",
-    "static/js/453.1965c8d6.chunk.js": "/react/static/js/453.1965c8d6.chunk.js",
-    "static/media/website-bgp.jpg": "/react/static/media/website-bgp.8ec0ac808f354a0bbe23.jpg",
-    "static/media/DaminZhangResume.pdf": "/react/static/media/DaminZhangResume.413ad564adbf95781e8e.pdf",
-    "static/media/tab-icon.png": "/react/static/media/tab-icon.c4204e34d10ad7c7afbe.png",
-    "index.html": "/react/index.html",
-    "main.eba702c6.css.map": "/react/static/css/main.eba702c6.css.map",
-    "main.66696e62.js.map": "/react/static/js/main.66696e62.js.map",
-    "453.1965c8d6.chunk.js.map": "/react/static/js/453.1965c8d6.chunk.js.map"
+    "main.css": "/www.daminzhang.com/static/css/main.eba702c6.css",
+    "main.js": "/www.daminzhang.com/static/js/main.44e4ea1a.js",
+    "static/js/453.1965c8d6.chunk.js": "/www.daminzhang.com/static/js/453.1965c8d6.chunk.js",
+    "static/media/website-bgp.jpg": "/www.daminzhang.com/static/media/website-bgp.8ec0ac808f354a0bbe23.jpg",
+    "static/media/DaminZhangResume.pdf": "/www.daminzhang.com/static/media/DaminZhangResume.413ad564adbf95781e8e.pdf",
+    "static/media/tab-icon.png": "/www.daminzhang.com/static/media/tab-icon.c4204e34d10ad7c7afbe.png",
+    "index.html": "/www.daminzhang.com/index.html",
+    "main.eba702c6.css.map": "/www.daminzhang.com/static/css/main.eba702c6.css.map",
+    "main.44e4ea1a.js.map": "/www.daminzhang.com/static/js/main.44e4ea1a.js.map",
+    "453.1965c8d6.chunk.js.map": "/www.daminzhang.com/static/js/453.1965c8d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eba702c6.css",
-    "static/js/main.66696e62.js"
+    "static/js/main.44e4ea1a.js"
   ]
 }
