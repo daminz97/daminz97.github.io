@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eba702c6.css",
+    "main.js": "/static/js/main.fa4ee362.js",
+    "static/js/453.1965c8d6.chunk.js": "/static/js/453.1965c8d6.chunk.js",
+    "static/media/website-bgp.jpg": "/static/media/website-bgp.8ec0ac808f354a0bbe23.jpg",
+    "static/media/DaminZhangResume.pdf": "/static/media/DaminZhangResume.413ad564adbf95781e8e.pdf",
+    "static/media/tab-icon.png": "/static/media/tab-icon.c4204e34d10ad7c7afbe.png",
+    "index.html": "/index.html",
+    "main.eba702c6.css.map": "/static/css/main.eba702c6.css.map",
+    "main.fa4ee362.js.map": "/static/js/main.fa4ee362.js.map",
+    "453.1965c8d6.chunk.js.map": "/static/js/453.1965c8d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eba702c6.css",
+    "static/js/main.fa4ee362.js"
+  ]
+}
