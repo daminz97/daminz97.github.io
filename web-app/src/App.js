@@ -59,7 +59,7 @@ function ProfileCol() {
   return (
     <Col lg={6} className='mt-3'>
       <h3 className="title font-weight-bold">Damin Zhang (张达敏)</h3>
-      <p className="font-weight-normal">PhD Student @ <a href="https://engineering.purdue.edu/AKRANLU/" target="_blank" rel="noreferrer">AKRaNLU Lab</a></p>
+      <p className="font-weight-normal">PhD Candidate @ <a href="https://engineering.purdue.edu/AKRANLU/" target="_blank" rel="noreferrer">AKRaNLU Lab</a></p>
       <p className="font-weight-normal">Research Assistant @ Purdue University</p>
       <p className="font-weight-normal">Research Member @ <a href="https://www.iculture.tsinghua.edu.cn/xmtlm/xmtlmjz/xmtlmcy/3.htm">THU-DataPi (数据派)</a></p>
       <p className="font-weight-normal">Email: zhan4060 [at] purdue [dot] edu</p>
@@ -126,7 +126,9 @@ function Section({title, items}) {
 
 function App() {
   const updates = [
+    ['', 'November 2024: Long paper accepted at COLING 2025!'],
     ['', 'August 2024: Internship at WAM as a Softare Engineer'],
+    ['', 'May 2024: Passed my Prelim!'],
     ['', 'June 2022: Designed and developed ConvIE at Happy the Movement, a startup in health industry'],
     ['', 'April 2022: Poster presentation at Purdue Polytechnic RIA 2022 Student Poster Symposium'],
     ['', 'March 2022: Full paper accepted at FLAIRS-35!'],
@@ -135,14 +137,14 @@ function App() {
   ];
 
   const educations = [
-    ['', 'PhD, Natural Language Processing, Purdue University, 2022-Present'],
+    ['', 'PhD, Natural Language Understanding, Purdue University, 2022-Present'],
     ['', 'MS, Computer and Information Technology, Purdue University, 2019-2021'],
     ['', 'BS, Computer Science, University of Massachusetts Amherst, 2015-2019'],
   ]
 
   const papers = [
     ['', 'Generic Communication Encoding (WIP)'],
-    ['', 'Taxonomy-based Checklist for Large Language Models Gender Bias Evaluation  (WIP)'],
+    ['', 'Hire Me or Not? Examining Language Model\'s Behavior with Occupation Attributes'],
     ['https://www.mdpi.com/2071-1050/16/7/2721', 'Is Alexa Happy or Angry? Perceptions and Attributions of Emotional Displays of Smart Technologies in Residential Homes'],
     ['https://www.amazon.science/alexa-prize/proceedings/boilerbot-a-reliable-task-oriented-chatbot-enhanced-with-large-language-models', 'BoilerBot: A reliable task-oriented chatbot enhanced with large language models'],
     ['https://arxiv.org/abs/2301.04347', 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models'],
