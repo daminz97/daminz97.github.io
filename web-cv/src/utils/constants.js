@@ -43,7 +43,7 @@ export const publications = [
         proceeding: 'COLING',
         year: '2025',
         link: 'https://aclanthology.org/2025.coling-main.529/',
-        img: '/assets/paper/coling25.png',
+        img: 'https://github.com/daminz97/daminz97.github.io/blob/master/web-cv/src/assets/paper/coling25.png',
     },
     {
         title: 'Beyond the Noisy Form: Fuzzy Author Role Classification with Intention',
@@ -51,7 +51,7 @@ export const publications = [
         proceeding: 'NAFIPS',
         year: '2024',
         link: '',
-        img: '/assets/paper/nafips24.png',
+        img: 'https://github.com/daminz97/daminz97.github.io/blob/master/web-cv/src/assets/paper/nafips24.png',
     },
     {
         title: 'Is Alexa Happy or Angry? Perceptions and Attributions of Emotional Displays of Smart Technologies in Residential Homes',
@@ -59,7 +59,7 @@ export const publications = [
         proceeding: 'Sustainability',
         year: '2024',
         link: 'https://www.mdpi.com/2071-1050/16/7/2721',
-        img: '/assets/paper/alexa2024.png',
+        img: 'https://github.com/daminz97/daminz97.github.io/blob/master/web-cv/src/assets/paper/alexa2024.png',
     },
     {
         title: 'BoilerBot: A reliable task-oriented chatbot enhanced with large language models',
@@ -67,7 +67,7 @@ export const publications = [
         proceeding: 'Alexa Prize Proceedings',
         year: '2023',
         link: 'https://www.amazon.science/alexa-prize/proceedings/boilerbot-a-reliable-task-oriented-chatbot-enhanced-with-large-language-models',
-        img: '/assets/paper/alexa2023.png',
+        img: 'https://github.com/daminz97/daminz97.github.io/blob/master/web-cv/src/assets/paper/alexa2023.png',
     },
     {
         title: 'Counteracts: Testing Stereotypical Representation in Pre-trained Language Models',
@@ -75,7 +75,7 @@ export const publications = [
         proceeding: '',
         year: '2023',
         link: 'https://arxiv.org/abs/2301.04347',
-        img: '/assets/paper/counteracts2023.png',
+        img: 'https://github.com/daminz97/daminz97.github.io/blob/master/web-cv/src/assets/paper/counteracts2023.png',
     },
     {
         title: 'Examining Stereotypes in News Articles',
@@ -83,7 +83,7 @@ export const publications = [
         proceeding: 'FLAIRS',
         year: '2022',
         link: 'https://journals.flvc.org/FLAIRS/article/view/130642/133944',
-        img: '/assets/paper/flairs2022.png',
+        img: 'https://github.com/daminz97/daminz97.github.io/blob/master/web-cv/src/assets/paper/flairs2022.png',
     },
 ];
 

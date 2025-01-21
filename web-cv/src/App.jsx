@@ -6,7 +6,6 @@ import cv from '@/assets/cv.pdf';
 
 import { updates, desp, publications } from '@/utils/constants';
 import ProfileCard from '@/components/ProfileCard';
-import UpdateCard from '@/components/UpdateCard';
 import PubCard from '@/components/PubCard';
 
 function App() {
