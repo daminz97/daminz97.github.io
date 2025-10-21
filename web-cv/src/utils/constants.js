@@ -96,6 +96,7 @@ export const publications = [
 ];
 
 export const projects = [
+    ['https://engineering.purdue.edu/AKRANLU/projects.html', 'CATT - Chat Analysis Triage Tool'],
     ['https://apps.apple.com/us/app/pikapass/id6447812288', 'PikaPass - Local Account Management'],
     ['https://apps.apple.com/us/app/muscloop/id1669056757', 'Muscloop - Training Portfolio'],
     ['', 'CATT - Chat Analysis Triage Tool'],
