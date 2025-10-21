@@ -1,6 +1,6 @@
 export const updates = [
+    {date: 'May, 2025', content: 'Incoming internship at LinkedIn!'},
     {date: 'November, 2024', content: 'Our paper \"Hire Me or Not? Examining Language Model\'s Behavior with Occupation Attributes\" is accepted at COLING 2025!'},
-    {date: 'August, 2024', content: 'Internship at WAM as a Software Engineer'},
     {date: 'May, 2024', content: 'Our paper \"Beyond the Noisy Form: Fuzzy Author Role Classification with Intention\" is accepted at NAFIPS 2024!'},
     {date: 'May, 2024', content: 'Passed my Prelim!'},
     {date: 'June, 2023', content: 'Our team \"Team Boilierbot\" has advanced to Alexa Prize TaskBot Challenge 2 semifinals representing Purdue!'},
@@ -18,7 +18,7 @@ export const desp = {
 export const educations = [
     {
         degree: 'Ph.D.',
-        major: 'Natural Language Understanding',
+        major: 'Computer and Information Technology',
         school: 'Purdue University',
         year: '2022-Present',
     },
@@ -37,6 +37,14 @@ export const educations = [
 ]
 
 export const publications = [
+    {
+        title: 'Temporal Understanding under Deictic Frame of Reference',
+        authors: ['Damin Zhang', 'Julia Rayz'],
+        proceeding: 'arXiv',
+        year: '2025',
+        link: 'https://arxiv.org/abs/2510.16685',
+        img: 'https://github.com/daminz97/web-img/blob/main/deictic2025.png?raw=true',
+    },
     { 
         title: 'Hire Me or Not? Examining Language Model\'s Behavior with Occupation Attributes',
         authors: ['Damin Zhang', 'Yi Zhang', 'Geetanjali Bihani', 'Julia Rayz'],
